@@ -1,0 +1,2021 @@
+2025-12-10 10:04:20,698 - INFO - ================================================================================
+2025-12-10 10:04:20,698 - INFO - --- Starting Restore Process ---
+2025-12-10 10:04:20,698 - INFO - ================================================================================
+2025-12-10 10:04:25,114 - INFO - Script finished.
+2025-12-10 10:06:51,721 - INFO - ================================================================================
+2025-12-10 10:06:51,721 - INFO - DATABASE AUTOMATION SCRIPT STARTED
+2025-12-10 10:06:51,721 - INFO - Timestamp: 2025-12-10 10:06:51
+2025-12-10 10:06:51,721 - INFO - ================================================================================
+2025-12-10 10:06:51,721 - INFO - Configuration:
+2025-12-10 10:06:51,721 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-10 10:06:51,721 - INFO -   Database: INDUS1_RSS
+2025-12-10 10:06:51,721 - INFO -   Source folder: D:\BACKUP\INDUS1_RSS
+2025-12-10 10:06:51,721 - INFO -   Target folder: E:\BACKUP
+2025-12-10 10:06:51,721 - INFO -   Restore path: E:\SQLData
+2025-12-10 10:06:51,721 - INFO - ================================================================================
+2025-12-10 10:06:51,721 - INFO - Checking if database exists...
+2025-12-10 10:06:55,791 - INFO - Database exists - Name: INDUS1_RSS, State: ONLINE, Recovery: SIMPLE
+2025-12-10 10:06:55,791 - INFO - Database 'INDUS1_RSS' exists
+2025-12-10 10:06:55,791 - INFO - Current state: ONLINE
+2025-12-10 10:06:55,791 - INFO - Recovery model: SIMPLE
+2025-12-10 10:06:58,605 - INFO - User confirmed restoration
+2025-12-10 10:06:58,605 - INFO - Killing all connections to database: INDUS1_RSS
+2025-12-10 10:06:58,605 - INFO - Setting database to SINGLE_USER mode...
+2025-12-10 10:06:58,944 - INFO - Restoring MULTI_USER mode...
+2025-12-10 10:06:58,948 - INFO - \u2713 All connections killed successfully
+2025-12-10 10:06:58,948 - INFO - Starting restore of 'INDUS1_RSS'
+2025-12-10 10:06:58,948 - INFO - Source folder: D:\BACKUP\INDUS1_RSS
+2025-12-10 10:06:58,948 - INFO - Restore path: E:\SQLData
+2025-12-10 10:06:58,948 - INFO - ================================================================================
+2025-12-10 10:06:58,948 - INFO - Starting database restore operation
+2025-12-10 10:06:58,948 - INFO - ================================================================================
+2025-12-10 10:06:58,948 - INFO - Scanning backup folder: D:\BACKUP\INDUS1_RSS
+2025-12-10 10:06:58,976 - INFO - Found 2 backup file(s) in folder
+2025-12-10 10:06:58,999 - INFO - \u2713 Valid backup: INDUS1_RSS.bak (Type: Database)
+2025-12-10 10:06:59,049 - WARNING - Error reading INDUS1_RSS_20170411095608.trn: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The media family on device 'D:\\BACKUP\\INDUS1_RSS\\INDUS1_RSS_20170411095608.trn' is incorrectly formed. SQL Server cannot process this media family. (3241) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE HEADERONLY is terminating abnormally. (3013)")
+2025-12-10 10:06:59,050 - INFO - Found 1 full backup(s) and 0 log backup(s)
+2025-12-10 10:06:59,050 - INFO - Selected backup chain: 1 file(s)
+2025-12-10 10:06:59,051 - INFO - Status: Found 1 backup(s) in folder
+2025-12-10 10:06:59,051 - INFO - Connecting to SQL Server: DESKTOP-4VRJ480
+2025-12-10 10:06:59,051 - INFO - Connection established successfully
+2025-12-10 10:06:59,051 - INFO - ------------------------------------------------------------
+2025-12-10 10:06:59,052 - INFO - Processing backup 1/1
+2025-12-10 10:06:59,052 - INFO - Type: Database
+2025-12-10 10:06:59,053 - INFO - File: INDUS1_RSS.bak
+2025-12-10 10:06:59,053 - INFO - Status: Restoring Database (1/1)
+2025-12-10 10:06:59,053 - INFO - Building RESTORE DATABASE command...
+2025-12-10 10:06:59,061 - INFO - Backup contains 2 file(s)
+2025-12-10 10:06:59,061 - INFO - Using custom restore path: E:\SQLData
+2025-12-10 10:06:59,062 - INFO - Using REPLACE option to overwrite existing database
+2025-12-10 10:06:59,062 - INFO - Executing restore command...
+2025-12-10 10:06:59,062 - INFO - Status: Executing restore command...
+2025-12-10 10:06:59,063 - INFO - Progress monitor started
+2025-12-10 10:06:59,160 - ERROR - SQL Server error during restore: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The operating system returned the error '32(The process cannot access the file because it is being used by another process.)' while attempting 'RestoreContainer::ValidateTargetForCreation' on 'E:\\SQLData\\INDUS1_RSS_INDUS1_RSS.mdf'. (3634) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS1_RSS' cannot be restored to 'E:\\SQLData\\INDUS1_RSS_INDUS1_RSS.mdf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-10 10:06:59,160 - ERROR - SQL Server error: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The operating system returned the error '32(The process cannot access the file because it is being used by another process.)' while attempting 'RestoreContainer::ValidateTargetForCreation' on 'E:\\SQLData\\INDUS1_RSS_INDUS1_RSS.mdf'. (3634) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS1_RSS' cannot be restored to 'E:\\SQLData\\INDUS1_RSS_INDUS1_RSS.mdf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-10 10:07:03,129 - ERROR - \u274c SQL Server error: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The operating system returned the error '32(The process cannot access the file because it is being used by another process.)' while attempting 'RestoreContainer::ValidateTargetForCreation' on 'E:\\SQLData\\INDUS1_RSS_INDUS1_RSS.mdf'. (3634) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS1_RSS' cannot be restored to 'E:\\SQLData\\INDUS1_RSS_INDUS1_RSS.mdf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-10 10:07:03,129 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-10 10:07:03,129 - INFO - Script execution time: 0.19 minutes
+2025-12-10 10:07:03,129 - INFO - Script finished.
+2025-12-10 10:08:07,749 - INFO - ================================================================================
+2025-12-10 10:08:07,749 - INFO - DATABASE AUTOMATION SCRIPT STARTED
+2025-12-10 10:08:07,749 - INFO - Timestamp: 2025-12-10 10:08:07
+2025-12-10 10:08:07,749 - INFO - ================================================================================
+2025-12-10 10:08:07,749 - INFO - Configuration:
+2025-12-10 10:08:07,749 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-10 10:08:07,749 - INFO -   Database: INDUS1_RSS
+2025-12-10 10:08:07,749 - INFO -   Source folder: D:\BACKUP\INDUS1_RSS
+2025-12-10 10:08:07,749 - INFO -   Target folder: E:\BACKUP
+2025-12-10 10:08:07,749 - INFO -   Restore path: E:\SQLData
+2025-12-10 10:08:07,749 - INFO - ================================================================================
+2025-12-10 10:08:07,749 - INFO - Checking if database exists...
+2025-12-10 10:08:11,826 - INFO - Database exists - Name: INDUS1_RSS, State: ONLINE, Recovery: SIMPLE
+2025-12-10 10:08:11,826 - INFO - Database 'INDUS1_RSS' exists
+2025-12-10 10:08:11,826 - INFO - Current state: ONLINE
+2025-12-10 10:08:11,826 - INFO - Recovery model: SIMPLE
+2025-12-10 10:08:19,842 - WARNING - Restoration cancelled by user (Ctrl+C)
+2025-12-10 10:08:19,842 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-10 10:08:19,842 - INFO - Script execution time: 0.20 minutes
+2025-12-10 10:08:19,842 - INFO - Script finished.
+2025-12-10 10:08:31,254 - INFO - ================================================================================
+2025-12-10 10:08:31,254 - INFO - DATABASE AUTOMATION SCRIPT STARTED
+2025-12-10 10:08:31,254 - INFO - Timestamp: 2025-12-10 10:08:31
+2025-12-10 10:08:31,254 - INFO - ================================================================================
+2025-12-10 10:08:31,254 - INFO - Configuration:
+2025-12-10 10:08:31,254 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-10 10:08:31,254 - INFO -   Database: TESTDB
+2025-12-10 10:08:31,254 - INFO -   Source folder: D:\BACKUP\TESTDB
+2025-12-10 10:08:31,254 - INFO -   Target folder: E:\BACKUP
+2025-12-10 10:08:31,254 - INFO -   Restore path: E:\SQLData
+2025-12-10 10:08:31,254 - INFO - ================================================================================
+2025-12-10 10:08:31,254 - INFO - Checking if database exists...
+2025-12-10 10:08:35,359 - INFO - Database 'TESTDB' does not exist
+2025-12-10 10:08:35,359 - INFO - Database 'TESTDB' does not exist - will create new
+2025-12-10 10:08:35,359 - INFO - Starting restore of 'TESTDB'
+2025-12-10 10:08:35,359 - INFO - Source folder: D:\BACKUP\TESTDB
+2025-12-10 10:08:35,359 - INFO - Restore path: E:\SQLData
+2025-12-10 10:08:35,359 - INFO - ================================================================================
+2025-12-10 10:08:35,359 - INFO - Starting database restore operation
+2025-12-10 10:08:35,359 - INFO - ================================================================================
+2025-12-10 10:08:35,359 - INFO - Scanning backup folder: D:\BACKUP\TESTDB
+2025-12-10 10:08:35,359 - INFO - Found 1 backup file(s) in folder
+2025-12-10 10:08:35,422 - INFO - \u2713 Valid backup: TESTDB.bak (Type: Database)
+2025-12-10 10:08:35,422 - INFO - Found 1 full backup(s) and 0 log backup(s)
+2025-12-10 10:08:35,423 - INFO - Selected backup chain: 1 file(s)
+2025-12-10 10:08:35,423 - INFO - Status: Found 1 backup(s) in folder
+2025-12-10 10:08:35,423 - INFO - Connecting to SQL Server: DESKTOP-4VRJ480
+2025-12-10 10:08:35,424 - INFO - Connection established successfully
+2025-12-10 10:08:35,424 - INFO - ------------------------------------------------------------
+2025-12-10 10:08:35,424 - INFO - Processing backup 1/1
+2025-12-10 10:08:35,424 - INFO - Type: Database
+2025-12-10 10:08:35,424 - INFO - File: TESTDB.bak
+2025-12-10 10:08:35,424 - INFO - Status: Restoring Database (1/1)
+2025-12-10 10:08:35,424 - INFO - Building RESTORE DATABASE command...
+2025-12-10 10:08:35,427 - INFO - Backup contains 2 file(s)
+2025-12-10 10:08:35,427 - INFO - Using custom restore path: E:\SQLData
+2025-12-10 10:08:35,427 - INFO - Using REPLACE option to overwrite existing database
+2025-12-10 10:08:35,428 - INFO - Executing restore command...
+2025-12-10 10:08:35,428 - INFO - Status: Executing restore command...
+2025-12-10 10:08:35,428 - INFO - Progress monitor started
+2025-12-10 10:09:27,744 - INFO - Progress: 100.0% complete
+2025-12-10 10:09:27,744 - INFO - Restore progress: 100.0%
+2025-12-10 10:09:29,014 - INFO - \u2713 Database restore completed in 53.59 seconds
+2025-12-10 10:09:29,014 - INFO - Status: Database restore completed
+2025-12-10 10:09:29,014 - INFO - ------------------------------------------------------------
+2025-12-10 10:09:29,014 - INFO - Checking final database state...
+2025-12-10 10:09:29,038 - INFO - \u2713 Database state: ONLINE
+2025-12-10 10:09:29,038 - INFO - Status: COMPLETED
+2025-12-10 10:09:29,038 - INFO - ================================================================================
+2025-12-10 10:09:29,039 - INFO - \u2713 RESTORE COMPLETED SUCCESSFULLY
+2025-12-10 10:09:29,039 - INFO - ================================================================================
+2025-12-10 10:09:29,753 - INFO - \u2705 Restore completed successfully.
+2025-12-10 10:09:29,753 - INFO - ================================================================================
+2025-12-10 10:09:29,753 - INFO - PREPARING DATABASE
+2025-12-10 10:09:29,753 - INFO - ================================================================================
+2025-12-10 10:09:29,753 - INFO - Setting recovery model to SIMPLE...
+2025-12-10 10:09:29,767 - INFO - \u2713 Recovery model set to SIMPLE
+2025-12-10 10:09:29,767 - INFO - Dropping existing clustered indexes...
+2025-12-10 10:10:22,257 - INFO - \u2713 Database preparation completed
+2025-12-10 10:10:22,257 - INFO - ================================================================================
+2025-12-10 10:10:22,257 - INFO - CREATING PARTITIONS
+2025-12-10 10:10:22,257 - INFO - ================================================================================
+2025-12-10 10:10:22,257 - INFO - Partition years: [2022, 2023, 2024, 2025, 2026]
+2025-12-10 10:10:22,257 - INFO - Checking for existing partition scheme...
+2025-12-10 10:10:22,305 - INFO - \u2713 Partition function and scheme created successfully
+2025-12-10 10:10:22,305 - INFO - ================================================================================
+2025-12-10 10:10:22,305 - INFO - CREATING INDEXES
+2025-12-10 10:10:22,306 - INFO - ================================================================================
+2025-12-10 10:10:22,306 - INFO - Connecting to database...
+2025-12-10 10:10:22,306 - INFO - Building index creation script...
+2025-12-10 10:10:22,307 - INFO - Executing index creation...
+2025-12-10 10:12:57,065 - INFO - \u2713 Indexes created successfully
+2025-12-10 10:12:57,065 - INFO - ================================================================================
+2025-12-10 10:12:57,065 - INFO - CREATING TEMPORARY TABLES
+2025-12-10 10:12:57,065 - INFO - ================================================================================
+2025-12-10 10:12:57,065 - INFO - Connecting to database...
+2025-12-10 10:12:57,065 - INFO - Creating temp tables with partition scheme...
+2025-12-10 10:12:57,565 - INFO - \u2713 Temp tables created successfully
+2025-12-10 10:12:57,565 - INFO - ================================================================================
+2025-12-10 10:12:57,565 - INFO - CREATING MASTER BACKUP
+2025-12-10 10:12:57,565 - INFO - ================================================================================
+2025-12-10 10:12:57,565 - INFO - Target backup folder: E:\BACKUP
+2025-12-10 10:12:57,565 - INFO - \u2713 Backup folder ready
+2025-12-10 10:12:57,565 - INFO - Backup file: E:\BACKUP\TESTDB_Partitioned_MASTER_20251210_101257.bak
+2025-12-10 10:12:57,565 - INFO - Starting backup (this may take a while)...
+2025-12-10 10:13:39,007 - INFO - \u2713 Backup created successfully (1.05 GB)
+2025-12-10 10:13:39,007 - INFO - ================================================================================
+2025-12-10 10:13:39,007 - INFO - PURGING YEARS
+2025-12-10 10:13:39,007 - INFO - ================================================================================
+2025-12-10 10:13:39,007 - INFO - Years to purge: [2024, 2025, 2026, 2022]
+2025-12-10 10:13:39,007 - INFO - Years to keep: [2023]
+2025-12-10 10:13:39,007 - INFO - ------------------------------------------------------------
+2025-12-10 10:13:39,007 - INFO - Purging year: 2024
+2025-12-10 10:13:39,133 - INFO - \u2713 Year 2024 purged successfully
+2025-12-10 10:13:39,133 - INFO - ------------------------------------------------------------
+2025-12-10 10:13:39,133 - INFO - Purging year: 2025
+2025-12-10 10:13:55,148 - INFO - \u2713 Year 2025 purged successfully
+2025-12-10 10:13:55,148 - INFO - ------------------------------------------------------------
+2025-12-10 10:13:55,148 - INFO - Purging year: 2026
+2025-12-10 10:13:55,228 - INFO - \u2713 Year 2026 purged successfully
+2025-12-10 10:13:55,228 - INFO - ------------------------------------------------------------
+2025-12-10 10:13:55,228 - INFO - Purging year: 2022
+2025-12-10 10:13:55,283 - INFO - \u2713 Year 2022 purged successfully
+2025-12-10 10:13:55,284 - INFO - \u2713 All years purged successfully
+2025-12-10 10:13:55,284 - INFO - ================================================================================
+2025-12-10 10:13:55,284 - INFO - FINAL CLEANUP AND YEARLY BACKUP
+2025-12-10 10:13:55,284 - INFO - ================================================================================
+2025-12-10 10:13:55,284 - INFO - Shrinking database...
+2025-12-10 10:14:01,452 - INFO - \u2713 Database shrunk successfully
+2025-12-10 10:14:01,452 - INFO - Dropping indexes for rebuild...
+2025-12-10 10:14:01,797 - INFO - \u2713 Indexes dropped
+2025-12-10 10:14:01,797 - INFO - Recreating indexes...
+2025-12-10 10:14:01,797 - INFO - ================================================================================
+2025-12-10 10:14:01,797 - INFO - CREATING INDEXES
+2025-12-10 10:14:01,797 - INFO - ================================================================================
+2025-12-10 10:14:01,797 - INFO - Connecting to database...
+2025-12-10 10:14:01,797 - INFO - Building index creation script...
+2025-12-10 10:14:01,797 - INFO - Executing index creation...
+2025-12-10 10:14:01,871 - INFO - \u2713 Indexes created successfully
+2025-12-10 10:14:01,871 - INFO - Creating final yearly backup...
+2025-12-10 10:14:01,871 - INFO - Backup file: E:\BACKUP\TESTDB_Yearly_20251210_101401.bak
+2025-12-10 10:14:02,406 - INFO - \u2713 Yearly backup created successfully (0.00 GB)
+2025-12-10 10:14:02,406 - INFO - ================================================================================
+2025-12-10 10:14:02,406 - INFO - \u2713 ALL PROCESSES COMPLETED SUCCESSFULLY!
+2025-12-10 10:14:02,406 - INFO - ================================================================================
+2025-12-10 10:14:02,406 - INFO - ================================================================================
+2025-12-10 10:14:02,406 - INFO - \u2713 SCRIPT COMPLETED SUCCESSFULLY
+2025-12-10 10:14:02,406 - INFO - Total execution time: 5.52 minutes
+2025-12-10 10:14:02,406 - INFO - ================================================================================
+2025-12-10 10:14:02,406 - INFO - Script execution time: 5.52 minutes
+2025-12-10 10:14:02,406 - INFO - Script finished.
+2025-12-10 10:56:35,203 - INFO - ================================================================================
+2025-12-10 10:56:35,210 - INFO - DATABASE AUTOMATION SCRIPT STARTED
+2025-12-10 10:56:35,210 - INFO - Timestamp: 2025-12-10 10:56:35
+2025-12-10 10:56:35,210 - INFO - ================================================================================
+2025-12-10 10:56:35,210 - INFO - Configuration:
+2025-12-10 10:56:35,210 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-10 10:56:35,210 - INFO -   Database: INDUS2_VACUUM
+2025-12-10 10:56:35,210 - INFO -   Source folder: E:\INDUS2_BKP
+2025-12-10 10:56:35,210 - INFO -   Target folder: E:\BACKUP
+2025-12-10 10:56:35,210 - INFO -   Restore path: E:\SQLData
+2025-12-10 10:56:35,210 - INFO - ================================================================================
+2025-12-10 10:56:35,210 - INFO - Checking if database exists...
+2025-12-10 10:56:39,625 - INFO - Database 'INDUS2_VACUUM' does not exist
+2025-12-10 10:56:39,625 - INFO - Database 'INDUS2_VACUUM' does not exist - will create new
+2025-12-10 10:56:39,625 - INFO - Starting restore of 'INDUS2_VACUUM'
+2025-12-10 10:56:39,625 - INFO - Source folder: E:\INDUS2_BKP
+2025-12-10 10:56:39,625 - INFO - Restore path: E:\SQLData
+2025-12-10 10:56:39,625 - INFO - ================================================================================
+2025-12-10 10:56:39,638 - INFO - Starting database restore operation
+2025-12-10 10:56:39,638 - INFO - ================================================================================
+2025-12-10 10:56:39,639 - INFO - Scanning backup folder: E:\INDUS2_BKP
+2025-12-10 10:56:39,639 - INFO - Found 2 backup file(s) in folder
+2025-12-10 10:56:43,081 - INFO - \u2713 Valid backup: INDUS2_VACUUM.bak (Type: Database)
+2025-12-10 10:56:46,573 - INFO - \u2713 Valid backup: INDUS2_VACUUM.trn (Type: Transaction Log)
+2025-12-10 10:56:46,573 - INFO - Found 1 full backup(s) and 1 log backup(s)
+2025-12-10 10:56:46,573 - INFO - Selected backup chain: 2 file(s)
+2025-12-10 10:56:46,573 - INFO - Status: Found 2 backup(s) in folder
+2025-12-10 10:56:46,573 - INFO - Connecting to SQL Server: DESKTOP-4VRJ480
+2025-12-10 10:56:46,573 - INFO - Connection established successfully
+2025-12-10 10:56:46,573 - INFO - ------------------------------------------------------------
+2025-12-10 10:56:46,573 - INFO - Processing backup 1/2
+2025-12-10 10:56:46,573 - INFO - Type: Database
+2025-12-10 10:56:46,573 - INFO - File: INDUS2_VACUUM.bak
+2025-12-10 10:56:46,573 - INFO - Status: Restoring Database (1/2)
+2025-12-10 10:56:46,573 - INFO - Building RESTORE DATABASE command...
+2025-12-10 10:56:46,612 - INFO - Backup contains 2 file(s)
+2025-12-10 10:56:46,612 - INFO - Using custom restore path: E:\SQLData
+2025-12-10 10:56:46,613 - INFO - Using REPLACE option to overwrite existing database
+2025-12-10 10:56:46,613 - INFO - Using NORECOVERY (more backups to apply)
+2025-12-10 10:56:46,613 - INFO - Executing restore command...
+2025-12-10 10:56:46,613 - INFO - Status: Executing restore command...
+2025-12-10 10:56:46,614 - INFO - Progress monitor started
+2025-12-10 11:45:35,650 - INFO - Progress: 100.0% complete
+2025-12-10 11:45:35,652 - INFO - Restore progress: 100.0%
+2025-12-10 11:48:12,768 - INFO - \u2713 Database restore completed in 3086.15 seconds
+2025-12-10 11:48:12,769 - INFO - Status: Database restore completed
+2025-12-10 11:48:12,769 - INFO - ------------------------------------------------------------
+2025-12-10 11:48:12,770 - INFO - Processing backup 2/2
+2025-12-10 11:48:12,770 - INFO - Type: Transaction Log
+2025-12-10 11:48:12,771 - INFO - File: INDUS2_VACUUM.trn
+2025-12-10 11:48:12,772 - INFO - Status: Restoring Transaction Log (2/2)
+2025-12-10 11:48:12,774 - INFO - Building RESTORE LOG command...
+2025-12-10 11:48:12,775 - INFO - Using RECOVERY (final restore)
+2025-12-10 11:48:12,778 - INFO - Executing restore command...
+2025-12-10 11:48:12,779 - INFO - Status: Executing restore command...
+2025-12-10 11:56:27,545 - INFO - \u2713 Transaction Log restore completed in 494.76 seconds
+2025-12-10 11:56:27,545 - INFO - Status: Transaction Log restore completed
+2025-12-10 11:56:27,545 - INFO - ------------------------------------------------------------
+2025-12-10 11:56:27,545 - INFO - Checking final database state...
+2025-12-10 11:56:27,576 - INFO - \u2713 Database state: ONLINE
+2025-12-10 11:56:27,576 - INFO - Status: COMPLETED
+2025-12-10 11:56:27,576 - INFO - ================================================================================
+2025-12-10 11:56:27,576 - INFO - \u2713 RESTORE COMPLETED SUCCESSFULLY
+2025-12-10 11:56:27,576 - INFO - ================================================================================
+2025-12-10 11:56:27,576 - INFO - \u2705 Restore completed successfully.
+2025-12-10 11:56:27,576 - INFO - ================================================================================
+2025-12-10 11:56:27,576 - INFO - PREPARING DATABASE
+2025-12-10 11:56:27,576 - INFO - ================================================================================
+2025-12-10 11:56:27,576 - INFO - Setting recovery model to SIMPLE...
+2025-12-10 11:56:27,590 - INFO - \u2713 Recovery model set to SIMPLE
+2025-12-10 11:56:27,590 - INFO - Dropping existing clustered indexes...
+2025-12-10 12:15:17,073 - INFO - \u2713 Database preparation completed
+2025-12-10 12:15:17,073 - INFO - ================================================================================
+2025-12-10 12:15:17,073 - INFO - CREATING PARTITIONS
+2025-12-10 12:15:17,073 - INFO - ================================================================================
+2025-12-10 12:15:17,073 - INFO - Partition years: [2022, 2023, 2024, 2025, 2026]
+2025-12-10 12:15:17,073 - INFO - Checking for existing partition scheme...
+2025-12-10 12:15:18,854 - INFO - \u2713 Partition function and scheme created successfully
+2025-12-10 12:15:18,854 - INFO - ================================================================================
+2025-12-10 12:15:18,854 - INFO - CREATING INDEXES
+2025-12-10 12:15:18,854 - INFO - ================================================================================
+2025-12-10 12:15:18,854 - INFO - Connecting to database...
+2025-12-10 12:15:18,860 - INFO - Building index creation script...
+2025-12-10 12:15:18,860 - INFO - Executing index creation...
+2025-12-10 19:05:20,545 - INFO - \u2713 Indexes created successfully
+2025-12-10 19:05:20,640 - INFO - ================================================================================
+2025-12-10 19:05:20,640 - INFO - CREATING TEMPORARY TABLES
+2025-12-10 19:05:20,640 - INFO - ================================================================================
+2025-12-10 19:05:20,640 - INFO - Connecting to database...
+2025-12-10 19:05:20,706 - INFO - Creating temp tables with partition scheme...
+2025-12-10 19:05:23,003 - INFO - \u2713 Temp tables created successfully
+2025-12-10 19:05:23,007 - INFO - ================================================================================
+2025-12-10 19:05:23,007 - INFO - CREATING MASTER BACKUP
+2025-12-10 19:05:23,007 - INFO - ================================================================================
+2025-12-10 19:05:23,007 - INFO - Target backup folder: E:\BACKUP
+2025-12-10 19:05:23,035 - INFO - \u2713 Backup folder ready
+2025-12-10 19:05:23,066 - INFO - Backup file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-10 19:05:23,066 - INFO - Starting backup (this may take a while)...
+2025-12-10 19:27:22,605 - INFO - \u2713 Backup created successfully (19.65 GB)
+2025-12-10 19:27:22,621 - INFO - ================================================================================
+2025-12-10 19:27:22,621 - INFO - PURGING YEARS
+2025-12-10 19:27:22,621 - INFO - ================================================================================
+2025-12-10 19:27:22,652 - INFO - Years to purge: [2024, 2025, 2026, 2022]
+2025-12-10 19:27:22,652 - INFO - Years to keep: [2023]
+2025-12-10 19:27:22,652 - INFO - ------------------------------------------------------------
+2025-12-10 19:27:22,652 - INFO - Purging year: 2024
+2025-12-10 19:41:27,489 - INFO - \u2713 Year 2024 purged successfully
+2025-12-10 19:41:27,491 - INFO - ------------------------------------------------------------
+2025-12-10 19:41:27,491 - INFO - Purging year: 2025
+2025-12-10 19:47:16,815 - INFO - \u2713 Year 2025 purged successfully
+2025-12-10 19:47:16,815 - INFO - ------------------------------------------------------------
+2025-12-10 19:47:16,815 - INFO - Purging year: 2026
+2025-12-10 19:47:41,553 - INFO - \u2713 Year 2026 purged successfully
+2025-12-10 19:47:41,553 - INFO - ------------------------------------------------------------
+2025-12-10 19:47:41,553 - INFO - Purging year: 2022
+2025-12-10 19:47:41,617 - INFO - \u2713 Year 2022 purged successfully
+2025-12-10 19:47:41,617 - INFO - \u2713 All years purged successfully
+2025-12-10 19:47:41,617 - INFO - ================================================================================
+2025-12-10 19:47:41,617 - INFO - FINAL CLEANUP AND YEARLY BACKUP
+2025-12-10 19:47:41,617 - INFO - ================================================================================
+2025-12-10 19:47:41,617 - INFO - Shrinking database...
+2025-12-10 22:16:16,760 - INFO - \u2713 Database shrunk successfully
+2025-12-10 22:16:16,760 - INFO - Dropping indexes for rebuild...
+2025-12-10 22:24:58,309 - INFO - \u2713 Indexes dropped
+2025-12-10 22:24:58,322 - INFO - Recreating indexes...
+2025-12-10 22:24:58,322 - INFO - ================================================================================
+2025-12-10 22:24:58,322 - INFO - CREATING INDEXES
+2025-12-10 22:24:58,322 - INFO - ================================================================================
+2025-12-10 22:24:58,322 - INFO - Connecting to database...
+2025-12-10 22:24:58,338 - INFO - Building index creation script...
+2025-12-10 22:24:58,338 - INFO - Executing index creation...
+2025-12-11 00:51:55,093 - INFO - \u2713 Indexes created successfully
+2025-12-11 00:51:55,093 - INFO - Creating final yearly backup...
+2025-12-11 00:51:55,093 - INFO - Backup file: E:\BACKUP\INDUS2_VACUUM_[2023]_Yearly_20251211_005155.bak
+2025-12-11 01:02:14,430 - INFO - \u2713 Yearly backup created successfully (8.35 GB)
+2025-12-11 01:02:14,430 - INFO - ================================================================================
+2025-12-11 01:02:14,430 - INFO - \u2713 ALL PROCESSES COMPLETED SUCCESSFULLY!
+2025-12-11 01:02:14,430 - INFO - ================================================================================
+2025-12-11 01:02:14,430 - INFO - ================================================================================
+2025-12-11 01:02:14,430 - INFO - \u2713 SCRIPT COMPLETED SUCCESSFULLY
+2025-12-11 01:02:14,430 - INFO - Total execution time: 845.65 minutes
+2025-12-11 01:02:14,430 - INFO - ================================================================================
+2025-12-11 01:02:14,430 - INFO - Script execution time: 845.65 minutes
+2025-12-11 01:02:14,430 - INFO - Script finished.
+2025-12-11 09:34:48,383 - INFO - ================================================================================
+2025-12-11 09:34:48,383 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-11 09:34:48,383 - INFO - Timestamp: 2025-12-11 09:34:48
+2025-12-11 09:34:48,399 - INFO - ================================================================================
+2025-12-11 09:34:48,399 - INFO - Configuration:
+2025-12-11 09:34:48,399 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-11 09:34:48,399 - INFO -   Database: INDUS2_VACUUM
+2025-12-11 09:34:48,399 - INFO -   Source Master file: None
+2025-12-11 09:34:48,399 - INFO -   Target folder: E:\BACKUP
+2025-12-11 09:34:48,399 - INFO -   Restore path: E:\SQLData
+2025-12-11 09:34:48,399 - INFO -   Yearly Backup Year: 2023
+2025-12-11 09:34:48,399 - INFO - ================================================================================
+2025-12-11 09:34:57,535 - INFO - Script execution time: 0.15 minutes
+2025-12-11 09:34:57,535 - INFO - Script finished.
+2025-12-11 09:38:26,833 - INFO - ================================================================================
+2025-12-11 09:38:26,833 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-11 09:38:26,833 - INFO - Timestamp: 2025-12-11 09:38:26
+2025-12-11 09:38:26,833 - INFO - ================================================================================
+2025-12-11 09:38:26,833 - INFO - Configuration:
+2025-12-11 09:38:26,833 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-11 09:38:26,833 - INFO -   Database: INDUS2_VACUUM_2023
+2025-12-11 09:38:26,833 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-11 09:38:26,833 - INFO -   Target folder: E:\BACKUP
+2025-12-11 09:38:26,833 - INFO -   Restore path: E:\SQLData
+2025-12-11 09:38:26,833 - INFO -   Yearly Backup Year: 2023
+2025-12-11 09:38:26,833 - INFO - ================================================================================
+2025-12-11 09:39:03,052 - ERROR - ================================================================================
+2025-12-11 09:39:03,052 - ERROR - \u274c SCRIPT ABORTED DUE TO ERROR
+2025-12-11 09:39:03,052 - ERROR - Error: name 'MASTER' is not defined
+2025-12-11 09:39:03,052 - ERROR - ================================================================================
+2025-12-11 09:39:03,052 - INFO - Script execution time: 0.60 minutes
+2025-12-11 09:39:03,052 - INFO - Script finished.
+2025-12-11 09:39:57,523 - INFO - ================================================================================
+2025-12-11 09:39:57,523 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-11 09:39:57,523 - INFO - Timestamp: 2025-12-11 09:39:57
+2025-12-11 09:39:57,523 - INFO - ================================================================================
+2025-12-11 09:39:57,523 - INFO - Configuration:
+2025-12-11 09:39:57,523 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-11 09:39:57,523 - INFO -   Database: INDUS2_VACUUM_2023
+2025-12-11 09:39:57,523 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-11 09:39:57,523 - INFO -   Target folder: E:\BACKUP
+2025-12-11 09:39:57,523 - INFO -   Restore path: E:\SQLData
+2025-12-11 09:39:57,523 - INFO -   Yearly Backup Year: 2023
+2025-12-11 09:39:57,523 - INFO - ================================================================================
+2025-12-11 09:39:59,886 - INFO - Checking if database exists...
+2025-12-11 09:40:04,300 - INFO - Database 'INDUS2_VACUUM_2023' does not exist
+2025-12-11 09:40:04,300 - INFO - Database 'INDUS2_VACUUM_2023' does not exist - will create new
+2025-12-11 09:40:04,300 - INFO - Starting restore of 'INDUS2_VACUUM_2023'
+2025-12-11 09:40:04,300 - INFO - Restore path: E:\SQLData
+2025-12-11 09:40:04,300 - ERROR - Unexpected error in restoration: restore_database_from_file() got an unexpected keyword argument 'source_backup_folder'
+2025-12-11 09:40:04,300 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-11 09:40:04,300 - INFO - Script execution time: 0.11 minutes
+2025-12-11 09:40:04,300 - INFO - Script finished.
+2025-12-11 09:41:29,024 - INFO - ================================================================================
+2025-12-11 09:41:29,024 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-11 09:41:29,024 - INFO - Timestamp: 2025-12-11 09:41:29
+2025-12-11 09:41:29,024 - INFO - ================================================================================
+2025-12-11 09:41:29,024 - INFO - Configuration:
+2025-12-11 09:41:29,024 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-11 09:41:29,024 - INFO -   Database: INDUS2_VACUUM_2023
+2025-12-11 09:41:29,024 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-11 09:41:29,024 - INFO -   Target folder: E:\BACKUP
+2025-12-11 09:41:29,024 - INFO -   Restore path: E:\SQLData
+2025-12-11 09:41:29,024 - INFO -   Yearly Backup Year: 2023
+2025-12-11 09:41:29,024 - INFO - ================================================================================
+2025-12-11 09:41:31,602 - INFO - Checking if database exists...
+2025-12-11 09:41:35,714 - INFO - Database 'INDUS2_VACUUM_2023' does not exist
+2025-12-11 09:41:35,714 - INFO - Database 'INDUS2_VACUUM_2023' does not exist - will create new
+2025-12-11 09:41:35,714 - INFO - Starting restore of 'INDUS2_VACUUM_2023'
+2025-12-11 09:41:35,714 - INFO - Restore path: E:\SQLData
+2025-12-11 09:41:35,714 - INFO - Connecting to SQL Server: DESKTOP-4VRJ480
+2025-12-11 09:41:35,890 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-11 09:41:35,890 - INFO - Script execution time: 0.11 minutes
+2025-12-11 09:41:35,890 - INFO - Script finished.
+2025-12-11 09:44:53,462 - INFO - ================================================================================
+2025-12-11 09:44:53,462 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-11 09:44:53,462 - INFO - Timestamp: 2025-12-11 09:44:53
+2025-12-11 09:44:53,462 - INFO - ================================================================================
+2025-12-11 09:44:53,462 - INFO - Configuration:
+2025-12-11 09:44:53,462 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-11 09:44:53,462 - INFO -   Database: INDUS2_VACUUM_2023
+2025-12-11 09:44:53,462 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-11 09:44:53,462 - INFO -   Target folder: E:\BACKUP
+2025-12-11 09:44:53,462 - INFO -   Restore path: E:\SQLData
+2025-12-11 09:44:53,462 - INFO -   Yearly Backup Year: 2023
+2025-12-11 09:44:53,462 - INFO - ================================================================================
+2025-12-11 09:44:55,260 - INFO - Checking if database exists...
+2025-12-11 09:44:59,340 - INFO - Database 'INDUS2_VACUUM_2023' does not exist
+2025-12-11 09:44:59,340 - INFO - Database 'INDUS2_VACUUM_2023' does not exist - will create new
+2025-12-11 09:44:59,340 - INFO - Starting restore of 'INDUS2_VACUUM_2023'
+2025-12-11 09:44:59,340 - INFO - Restore path: E:\SQLData
+2025-12-11 09:44:59,340 - INFO - Connecting to SQL Server: DESKTOP-4VRJ480
+2025-12-11 09:44:59,407 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Incorrect syntax near 'MOVE'. (102) (SQLExecDirectW)")
+2025-12-11 09:44:59,407 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-11 09:44:59,407 - INFO - Script execution time: 0.10 minutes
+2025-12-11 09:44:59,407 - INFO - Script finished.
+2025-12-11 09:46:53,039 - INFO - ================================================================================
+2025-12-11 09:46:53,055 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-11 09:46:53,055 - INFO - Timestamp: 2025-12-11 09:46:53
+2025-12-11 09:46:53,055 - INFO - ================================================================================
+2025-12-11 09:46:53,055 - INFO - Configuration:
+2025-12-11 09:46:53,055 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-11 09:46:53,055 - INFO -   Database: INDUS2_VACUUM_2023
+2025-12-11 09:46:53,055 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-11 09:46:53,055 - INFO -   Target folder: E:\BACKUP
+2025-12-11 09:46:53,055 - INFO -   Restore path: E:\SQLData
+2025-12-11 09:46:53,055 - INFO -   Yearly Backup Year: 2023
+2025-12-11 09:46:53,055 - INFO - ================================================================================
+2025-12-11 09:46:54,789 - INFO - Checking if database exists...
+2025-12-11 09:46:58,896 - INFO - Database 'INDUS2_VACUUM_2023' does not exist
+2025-12-11 09:46:58,896 - INFO - Database 'INDUS2_VACUUM_2023' does not exist - will create new
+2025-12-11 09:46:58,896 - INFO - Starting restore of 'INDUS2_VACUUM_2023'
+2025-12-11 09:46:58,896 - INFO - Restore path: E:\SQLData
+2025-12-11 09:46:58,896 - INFO - Connecting to SQL Server
+2025-12-11 09:46:58,896 - ERROR - Unexpected error in restoration: name '_escape_sql_literal' is not defined
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\PARTITIONING\AUTOMATION\RPB_draft.py", line 495, in restore_database_from_file
+    sql_filelist = f"RESTORE FILELISTONLY FROM DISK = N'{_escape_sql_literal(source_master_file)}';"
+NameError: name '_escape_sql_literal' is not defined
+2025-12-11 09:46:58,913 - WARNING - Could not set MULTI_USER: local variable 'db_exists' referenced before assignment
+2025-12-11 09:46:58,913 - ERROR - Unexpected error in restoration: name '_escape_sql_literal' is not defined
+2025-12-11 09:46:58,913 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-11 09:46:58,913 - INFO - Script execution time: 0.10 minutes
+2025-12-11 09:46:58,913 - INFO - Script finished.
+2025-12-11 09:47:12,496 - INFO - ================================================================================
+2025-12-11 09:47:12,496 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-11 09:47:12,496 - INFO - Timestamp: 2025-12-11 09:47:12
+2025-12-11 09:47:12,496 - INFO - ================================================================================
+2025-12-11 09:47:12,496 - INFO - Configuration:
+2025-12-11 09:47:12,496 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-11 09:47:12,496 - INFO -   Database: INDUS2_VACUUM_2023
+2025-12-11 09:47:12,496 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-11 09:47:12,496 - INFO -   Target folder: E:\BACKUP
+2025-12-11 09:47:12,496 - INFO -   Restore path: E:\SQLData
+2025-12-11 09:47:12,496 - INFO -   Yearly Backup Year: 2023
+2025-12-11 09:47:12,496 - INFO - ================================================================================
+2025-12-11 09:47:13,579 - INFO - Checking if database exists...
+2025-12-11 09:47:17,679 - INFO - Database 'INDUS2_VACUUM_2023' does not exist
+2025-12-11 09:47:17,679 - INFO - Database 'INDUS2_VACUUM_2023' does not exist - will create new
+2025-12-11 09:47:17,679 - INFO - Starting restore of 'INDUS2_VACUUM_2023'
+2025-12-11 09:47:17,679 - INFO - Restore path: E:\SQLData
+2025-12-11 09:47:17,679 - INFO - Connecting to SQL Server
+2025-12-11 09:47:17,711 - INFO - Executing RESTORE statement. If this fails, copy the following SQL into SSMS to debug:
+2025-12-11 09:47:17,711 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The file 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM.mdf' cannot be overwritten.  It is being used by database 'INDUS2_VACUUM'. (1834) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM.mdf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The file 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM_log.ldf' cannot be overwritten.  It is being used by database 'INDUS2_VACUUM'. (1834); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM_log' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM_log.ldf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\PARTITIONING\AUTOMATION\RPB_draft.py", line 574, in restore_database_from_file
+    cursor.execute(restore_sql)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The file 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM.mdf' cannot be overwritten.  It is being used by database 'INDUS2_VACUUM'. (1834) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM.mdf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The file 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM_log.ldf' cannot be overwritten.  It is being used by database 'INDUS2_VACUUM'. (1834); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM_log' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM_log.ldf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-11 09:47:17,711 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The file 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM.mdf' cannot be overwritten.  It is being used by database 'INDUS2_VACUUM'. (1834) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM.mdf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The file 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM_log.ldf' cannot be overwritten.  It is being used by database 'INDUS2_VACUUM'. (1834); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM_log' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM_log.ldf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-11 09:47:17,711 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-11 09:47:17,711 - INFO - Script execution time: 0.09 minutes
+2025-12-11 09:47:17,711 - INFO - Script finished.
+2025-12-11 09:48:40,103 - INFO - ================================================================================
+2025-12-11 09:48:40,103 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-11 09:48:40,103 - INFO - Timestamp: 2025-12-11 09:48:40
+2025-12-11 09:48:40,103 - INFO - ================================================================================
+2025-12-11 09:48:40,103 - INFO - Configuration:
+2025-12-11 09:48:40,103 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-11 09:48:40,103 - INFO -   Database: INDUS2_VACUUM_2023
+2025-12-11 09:48:40,103 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-11 09:48:40,103 - INFO -   Target folder: E:\BACKUP
+2025-12-11 09:48:40,103 - INFO -   Restore path: E:\SQLData
+2025-12-11 09:48:40,103 - INFO -   Yearly Backup Year: 2023
+2025-12-11 09:48:40,103 - INFO - ================================================================================
+2025-12-11 09:48:41,698 - INFO - Checking if database exists...
+2025-12-11 09:48:45,803 - INFO - Database 'INDUS2_VACUUM_2023' does not exist
+2025-12-11 09:48:45,803 - INFO - Database 'INDUS2_VACUUM_2023' does not exist - will create new
+2025-12-11 09:48:45,803 - INFO - Starting restore of 'INDUS2_VACUUM_2023'
+2025-12-11 09:48:45,803 - INFO - Restore path: E:\SQLData
+2025-12-11 09:48:45,803 - INFO - Connecting to SQL Server
+2025-12-11 09:48:45,803 - ERROR - Unexpected error in restoration: _get_connection_string() takes 0 positional arguments but 3 were given
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\PARTITIONING\AUTOMATION\RPB_draft.py", line 490, in restore_database_from_file
+    conn = pyodbc.connect(_get_connection_string(trusted_connection, uid, pwd),
+TypeError: _get_connection_string() takes 0 positional arguments but 3 were given
+2025-12-11 09:48:45,803 - ERROR - Unexpected error in restoration: _get_connection_string() takes 0 positional arguments but 3 were given
+2025-12-11 09:48:45,803 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-11 09:48:45,803 - INFO - Script execution time: 0.09 minutes
+2025-12-11 09:48:45,803 - INFO - Script finished.
+2025-12-11 09:49:08,393 - INFO - ================================================================================
+2025-12-11 09:49:08,393 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-11 09:49:08,393 - INFO - Timestamp: 2025-12-11 09:49:08
+2025-12-11 09:49:08,393 - INFO - ================================================================================
+2025-12-11 09:49:08,393 - INFO - Configuration:
+2025-12-11 09:49:08,393 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-11 09:49:08,393 - INFO -   Database: INDUS2_VACUUM_2023
+2025-12-11 09:49:08,393 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-11 09:49:08,393 - INFO -   Target folder: E:\BACKUP
+2025-12-11 09:49:08,393 - INFO -   Restore path: E:\SQLData
+2025-12-11 09:49:08,393 - INFO -   Yearly Backup Year: 2023
+2025-12-11 09:49:08,393 - INFO - ================================================================================
+2025-12-11 09:49:09,422 - INFO - Checking if database exists...
+2025-12-11 09:49:13,508 - INFO - Database 'INDUS2_VACUUM_2023' does not exist
+2025-12-11 09:49:13,508 - INFO - Database 'INDUS2_VACUUM_2023' does not exist - will create new
+2025-12-11 09:49:13,508 - INFO - Starting restore of 'INDUS2_VACUUM_2023'
+2025-12-11 09:49:13,508 - INFO - Restore path: E:\SQLData
+2025-12-11 09:49:13,508 - INFO - Connecting to SQL Server
+2025-12-11 09:49:13,598 - INFO - Executing RESTORE statement
+2025-12-11 09:49:13,613 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The file 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM.mdf' cannot be overwritten.  It is being used by database 'INDUS2_VACUUM'. (1834) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM.mdf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The file 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM_log.ldf' cannot be overwritten.  It is being used by database 'INDUS2_VACUUM'. (1834); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM_log' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM_log.ldf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\PARTITIONING\AUTOMATION\RPB_draft.py", line 552, in restore_database_from_file
+    cursor.execute(restore_sql)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The file 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM.mdf' cannot be overwritten.  It is being used by database 'INDUS2_VACUUM'. (1834) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM.mdf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The file 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM_log.ldf' cannot be overwritten.  It is being used by database 'INDUS2_VACUUM'. (1834); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM_log' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM_log.ldf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-11 09:49:13,617 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The file 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM.mdf' cannot be overwritten.  It is being used by database 'INDUS2_VACUUM'. (1834) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM.mdf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The file 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM_log.ldf' cannot be overwritten.  It is being used by database 'INDUS2_VACUUM'. (1834); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM_log' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_INDUS2_VACUUM_log.ldf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-11 09:49:13,618 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-11 09:49:13,619 - INFO - Script execution time: 0.09 minutes
+2025-12-11 09:49:13,620 - INFO - Script finished.
+2025-12-11 09:52:34,363 - INFO - ================================================================================
+2025-12-11 09:52:34,363 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-11 09:52:34,363 - INFO - Timestamp: 2025-12-11 09:52:34
+2025-12-11 09:52:34,363 - INFO - ================================================================================
+2025-12-11 09:52:34,363 - INFO - Configuration:
+2025-12-11 09:52:34,363 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-11 09:52:34,363 - INFO -   Database: INDUS2_VACUUM_2023
+2025-12-11 09:52:34,363 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-11 09:52:34,363 - INFO -   Target folder: E:\BACKUP
+2025-12-11 09:52:34,363 - INFO -   Restore path: E:\SQLData
+2025-12-11 09:52:34,363 - INFO -   Yearly Backup Year: 2023
+2025-12-11 09:52:34,363 - INFO - ================================================================================
+2025-12-11 09:52:35,776 - INFO - Checking if database exists...
+2025-12-11 09:52:39,863 - INFO - Database 'INDUS2_VACUUM_2023' does not exist
+2025-12-11 09:52:39,863 - INFO - Database 'INDUS2_VACUUM_2023' does not exist - will create new
+2025-12-11 09:52:39,863 - INFO - Starting restore of 'INDUS2_VACUUM_2023'
+2025-12-11 09:52:39,863 - INFO - Restore path: E:\SQLData
+2025-12-11 09:52:39,863 - INFO - Connecting to SQL Server
+2025-12-11 09:52:39,962 - INFO - Executing RESTORE statement
+2025-12-11 09:52:39,962 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Conflicting file relocations have been specified for file 'INDUS2_VACUUM'. Only a single WITH MOVE clause should be specified for any logical file name. (4353) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\PARTITIONING\AUTOMATION\RPB_draft.py", line 559, in restore_database_from_file
+    cursor.execute(restore_sql)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Conflicting file relocations have been specified for file 'INDUS2_VACUUM'. Only a single WITH MOVE clause should be specified for any logical file name. (4353) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-11 09:52:39,977 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Conflicting file relocations have been specified for file 'INDUS2_VACUUM'. Only a single WITH MOVE clause should be specified for any logical file name. (4353) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-11 09:52:39,980 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-11 09:52:39,980 - INFO - Script execution time: 0.09 minutes
+2025-12-11 09:52:39,980 - INFO - Script finished.
+2025-12-11 09:54:52,025 - INFO - ================================================================================
+2025-12-11 09:54:52,025 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-11 09:54:52,025 - INFO - Timestamp: 2025-12-11 09:54:52
+2025-12-11 09:54:52,025 - INFO - ================================================================================
+2025-12-11 09:54:52,025 - INFO - Configuration:
+2025-12-11 09:54:52,025 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-11 09:54:52,025 - INFO -   Database: INDUS2_VACUUM_2023
+2025-12-11 09:54:52,025 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-11 09:54:52,025 - INFO -   Target folder: E:\BACKUP
+2025-12-11 09:54:52,025 - INFO -   Restore path: E:\SQLData
+2025-12-11 09:54:52,025 - INFO -   Yearly Backup Year: 2023
+2025-12-11 09:54:52,025 - INFO - ================================================================================
+2025-12-11 09:54:53,906 - INFO - Checking if database exists...
+2025-12-11 09:54:58,014 - INFO - Database 'INDUS2_VACUUM_2023' does not exist
+2025-12-11 09:54:58,014 - INFO - Database 'INDUS2_VACUUM_2023' does not exist - will create new
+2025-12-11 09:54:58,014 - INFO - Starting restore of 'INDUS2_VACUUM_2023'
+2025-12-11 09:54:58,014 - INFO - Restore path: E:\SQLData
+2025-12-11 09:54:58,014 - INFO - Connecting to SQL Server
+2025-12-11 09:54:58,072 - INFO - Executing RESTORE statement
+2025-12-11 10:06:39,129 - ERROR - Unexpected error in restoration: cannot unpack non-iterable NoneType object
+2025-12-11 10:06:39,145 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-11 10:06:39,145 - INFO - Script execution time: 11.79 minutes
+2025-12-11 10:06:39,145 - INFO - Script finished.
+2025-12-23 09:47:40,439 - INFO - ================================================================================
+2025-12-23 09:47:40,439 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 09:47:40,439 - INFO - Timestamp: 2025-12-23 09:47:40
+2025-12-23 09:47:40,439 - INFO - ================================================================================
+2025-12-23 09:47:40,439 - INFO - Configuration:
+2025-12-23 09:47:40,439 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 09:47:40,439 - INFO -   Database: INDUS2_VACUUM_2023
+2025-12-23 09:47:40,439 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 09:47:40,439 - INFO -   Target folder: E:\BACKUP
+2025-12-23 09:47:40,439 - INFO -   Restore path: E:\SQLData
+2025-12-23 09:47:40,439 - INFO -   Yearly Backup Year: 2023
+2025-12-23 09:47:40,439 - INFO - ================================================================================
+2025-12-23 09:48:41,971 - INFO - Script execution time: 1.03 minutes
+2025-12-23 09:48:41,971 - INFO - Script finished.
+2025-12-23 09:48:59,417 - INFO - ================================================================================
+2025-12-23 09:48:59,417 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 09:48:59,417 - INFO - Timestamp: 2025-12-23 09:48:59
+2025-12-23 09:48:59,417 - INFO - ================================================================================
+2025-12-23 09:48:59,417 - INFO - Configuration:
+2025-12-23 09:48:59,417 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 09:48:59,417 - INFO -   Database: INDUS2_VACUUM_2023
+2025-12-23 09:48:59,417 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 09:48:59,417 - INFO -   Target folder: E:\BACKUP
+2025-12-23 09:48:59,417 - INFO -   Restore path: E:\SQLData
+2025-12-23 09:48:59,417 - INFO -   Yearly Backup Year: 2025
+2025-12-23 09:48:59,417 - INFO - ================================================================================
+2025-12-23 09:49:04,390 - INFO - Script execution time: 0.08 minutes
+2025-12-23 09:49:04,390 - INFO - Script finished.
+2025-12-23 09:49:12,541 - INFO - ================================================================================
+2025-12-23 09:49:12,541 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 09:49:12,541 - INFO - Timestamp: 2025-12-23 09:49:12
+2025-12-23 09:49:12,541 - INFO - ================================================================================
+2025-12-23 09:49:12,541 - INFO - Configuration:
+2025-12-23 09:49:12,553 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 09:49:12,553 - INFO -   Database: INDUS2_VACUUM_2025
+2025-12-23 09:49:12,553 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 09:49:12,553 - INFO -   Target folder: E:\BACKUP
+2025-12-23 09:49:12,553 - INFO -   Restore path: E:\SQLData
+2025-12-23 09:49:12,553 - INFO -   Yearly Backup Year: 2025
+2025-12-23 09:49:12,553 - INFO - ================================================================================
+2025-12-23 09:49:27,174 - INFO - Checking if database exists...
+2025-12-23 09:49:31,455 - INFO - Database 'INDUS2_VACUUM_2025' does not exist
+2025-12-23 09:49:31,455 - INFO - Database 'INDUS2_VACUUM_2025' does not exist - will create new
+2025-12-23 09:49:31,455 - INFO - Starting restore of 'INDUS2_VACUUM_2025'
+2025-12-23 09:49:31,455 - INFO - Restore path: E:\SQLData
+2025-12-23 09:49:31,455 - INFO - Connecting to SQL Server
+2025-12-23 09:49:31,827 - INFO - Executing RESTORE statement
+2025-12-23 09:49:32,054 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'E:\\SQLData\\INDUS2_VACUUM_2025' is claimed by 'INDUS2_VACUUM_log'(2) and 'INDUS2_VACUUM'(1). The WITH MOVE clause can be used to relocate one or more files. (3176) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\PARTITIONING\AUTOMATION\RPB_draft.py", line 558, in restore_database_from_file
+    cursor.execute(restore_sql)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'E:\\SQLData\\INDUS2_VACUUM_2025' is claimed by 'INDUS2_VACUUM_log'(2) and 'INDUS2_VACUUM'(1). The WITH MOVE clause can be used to relocate one or more files. (3176) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-23 09:49:32,064 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'E:\\SQLData\\INDUS2_VACUUM_2025' is claimed by 'INDUS2_VACUUM_log'(2) and 'INDUS2_VACUUM'(1). The WITH MOVE clause can be used to relocate one or more files. (3176) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-23 09:49:32,064 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-23 09:49:32,064 - INFO - Script execution time: 0.33 minutes
+2025-12-23 09:49:32,069 - INFO - Script finished.
+2025-12-23 09:54:49,372 - INFO - ================================================================================
+2025-12-23 09:54:49,372 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 09:54:49,372 - INFO - Timestamp: 2025-12-23 09:54:49
+2025-12-23 09:54:49,372 - INFO - ================================================================================
+2025-12-23 09:54:49,372 - INFO - Configuration:
+2025-12-23 09:54:49,372 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 09:54:49,372 - INFO -   Database: INDUS2_VACUUM_2025
+2025-12-23 09:54:49,372 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 09:54:49,372 - INFO -   Target folder: E:\BACKUP
+2025-12-23 09:54:49,372 - INFO -   Restore path: E:\SQLData
+2025-12-23 09:54:49,372 - INFO -   Yearly Backup Year: 2025
+2025-12-23 09:54:49,372 - INFO - ================================================================================
+2025-12-23 09:54:52,013 - INFO - Checking if database exists...
+2025-12-23 09:54:56,157 - INFO - Database 'INDUS2_VACUUM_2025' does not exist
+2025-12-23 09:54:56,157 - INFO - Database 'INDUS2_VACUUM_2025' does not exist - will create new
+2025-12-23 09:54:56,157 - INFO - Starting restore of 'INDUS2_VACUUM_2025'
+2025-12-23 09:54:56,157 - INFO - Restore path: E:\SQLData
+2025-12-23 09:54:56,157 - INFO - Connecting to SQL Server
+2025-12-23 09:54:56,204 - INFO - Executing RESTORE statement
+2025-12-23 09:54:56,295 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]There is insufficient free space on disk volume 'E:\\' to create the database. The database requires 235012292608 additional free bytes, while only 97656037376 bytes are available. (3257) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\PARTITIONING\AUTOMATION\RPB_draft.py", line 561, in restore_database_from_file
+    cursor.execute(restore_sql)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]There is insufficient free space on disk volume 'E:\\' to create the database. The database requires 235012292608 additional free bytes, while only 97656037376 bytes are available. (3257) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-23 09:54:56,304 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]There is insufficient free space on disk volume 'E:\\' to create the database. The database requires 235012292608 additional free bytes, while only 97656037376 bytes are available. (3257) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-23 09:54:56,304 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-23 09:54:56,304 - INFO - Script execution time: 0.12 minutes
+2025-12-23 09:54:56,304 - INFO - Script finished.
+2025-12-23 10:28:42,329 - INFO - ================================================================================
+2025-12-23 10:28:42,329 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 10:28:42,329 - INFO - Timestamp: 2025-12-23 10:28:42
+2025-12-23 10:28:42,329 - INFO - ================================================================================
+2025-12-23 10:28:42,329 - INFO - Configuration:
+2025-12-23 10:28:42,329 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 10:28:42,329 - INFO -   Database: INDUS2_VACUUM_2025
+2025-12-23 10:28:42,329 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 10:28:42,329 - INFO -   Target folder: E:\BACKUP
+2025-12-23 10:28:42,329 - INFO -   Restore path: E:\SQLData
+2025-12-23 10:28:42,329 - INFO -   Yearly Backup Year: 2025
+2025-12-23 10:28:42,329 - INFO - ================================================================================
+2025-12-23 10:28:45,452 - INFO - Checking if database exists...
+2025-12-23 10:28:49,601 - INFO - Database 'INDUS2_VACUUM_2025' does not exist
+2025-12-23 10:28:49,601 - INFO - Database 'INDUS2_VACUUM_2025' does not exist - will create new
+2025-12-23 10:28:49,601 - INFO - Starting restore of 'INDUS2_VACUUM_2025'
+2025-12-23 10:28:49,601 - INFO - Restore path: E:\SQLData
+2025-12-23 10:28:49,601 - INFO - Connecting to SQL Server
+2025-12-23 10:28:49,652 - INFO - Executing RESTORE statement
+2025-12-23 10:28:49,680 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]There is insufficient free space on disk volume 'E:\\' to create the database. The database requires 235012292608 additional free bytes, while only 97656037376 bytes are available. (3257) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\PARTITIONING\AUTOMATION\RPB_draft.py", line 561, in restore_database_from_file
+    cursor.execute(restore_sql)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]There is insufficient free space on disk volume 'E:\\' to create the database. The database requires 235012292608 additional free bytes, while only 97656037376 bytes are available. (3257) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-23 10:28:49,680 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]There is insufficient free space on disk volume 'E:\\' to create the database. The database requires 235012292608 additional free bytes, while only 97656037376 bytes are available. (3257) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-23 10:28:49,680 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-23 10:28:49,680 - INFO - Script execution time: 0.12 minutes
+2025-12-23 10:28:49,680 - INFO - Script finished.
+2025-12-23 10:29:58,624 - INFO - ================================================================================
+2025-12-23 10:29:58,625 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 10:29:58,625 - INFO - Timestamp: 2025-12-23 10:29:58
+2025-12-23 10:29:58,625 - INFO - ================================================================================
+2025-12-23 10:29:58,625 - INFO - Configuration:
+2025-12-23 10:29:58,625 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 10:29:58,626 - INFO -   Database: INDUS2_VACUUM_2025
+2025-12-23 10:29:58,626 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 10:29:58,626 - INFO -   Target folder: E:\BACKUP
+2025-12-23 10:29:58,626 - INFO -   Restore path: E:\SQLData
+2025-12-23 10:29:58,626 - INFO -   Yearly Backup Year: 2025
+2025-12-23 10:29:58,626 - INFO - ================================================================================
+2025-12-23 10:29:59,945 - INFO - Checking if database exists...
+2025-12-23 10:30:04,095 - INFO - Database 'INDUS2_VACUUM_2025' does not exist
+2025-12-23 10:30:04,096 - INFO - Database 'INDUS2_VACUUM_2025' does not exist - will create new
+2025-12-23 10:30:04,096 - INFO - Starting restore of 'INDUS2_VACUUM_2025'
+2025-12-23 10:30:04,096 - INFO - Restore path: E:\SQLData
+2025-12-23 10:30:04,096 - INFO - Connecting to SQL Server
+2025-12-23 10:30:04,154 - INFO - Executing RESTORE statement
+2025-12-23 10:41:57,534 - ERROR - Unexpected error in restoration: cannot unpack non-iterable NoneType object
+2025-12-23 10:41:57,534 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-23 10:41:57,534 - INFO - Script execution time: 11.98 minutes
+2025-12-23 10:41:57,534 - INFO - Script finished.
+2025-12-23 10:45:17,339 - INFO - ================================================================================
+2025-12-23 10:45:17,339 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 10:45:17,339 - INFO - Timestamp: 2025-12-23 10:45:17
+2025-12-23 10:45:17,339 - INFO - ================================================================================
+2025-12-23 10:45:17,339 - INFO - Configuration:
+2025-12-23 10:45:17,339 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 10:45:17,339 - INFO -   Database: INDUS2_VACUUM_2025
+2025-12-23 10:45:17,339 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 10:45:17,339 - INFO -   Target folder: E:\BACKUP
+2025-12-23 10:45:17,339 - INFO -   Restore path: E:\SQLData
+2025-12-23 10:45:17,339 - INFO -   Yearly Backup Year: 2025
+2025-12-23 10:45:17,339 - INFO - ================================================================================
+2025-12-23 10:45:21,845 - INFO - Checking if database exists...
+2025-12-23 10:45:25,958 - INFO - Database exists - Name: INDUS2_VACUUM_2025, State: RESTORING, Recovery: FULL
+2025-12-23 10:45:25,958 - INFO - Database 'INDUS2_VACUUM_2025' exists
+2025-12-23 10:45:25,958 - INFO - Current state: RESTORING
+2025-12-23 10:45:25,958 - INFO - Recovery model: FULL
+2025-12-23 10:45:25,958 - INFO - Source file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 10:45:30,714 - INFO - User confirmed restoration
+2025-12-23 10:45:30,714 - INFO - Killing all connections to database: INDUS2_VACUUM_2025
+2025-12-23 10:45:30,714 - INFO - Setting database to SINGLE_USER mode...
+2025-12-23 10:45:32,452 - ERROR - Error killing database connections: ('42000', '[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Unable to open the physical file "E:\\SQLData\\INDUS2_VACUUM_2025.mdf". Operating system error 32: "32(The process cannot access the file because it is being used by another process.)". (5120) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]ALTER DATABASE is not permitted while a database is in the Restoring state. (5052); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]ALTER DATABASE statement failed. (5069)')
+2025-12-23 10:45:32,468 - ERROR - Failed to kill database connections
+2025-12-23 10:45:32,468 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-23 10:45:32,468 - INFO - Script execution time: 0.25 minutes
+2025-12-23 10:45:32,468 - INFO - Script finished.
+2025-12-23 10:50:11,174 - INFO - ================================================================================
+2025-12-23 10:50:11,174 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 10:50:11,174 - INFO - Timestamp: 2025-12-23 10:50:11
+2025-12-23 10:50:11,174 - INFO - ================================================================================
+2025-12-23 10:50:11,174 - INFO - Configuration:
+2025-12-23 10:50:11,174 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 10:50:11,174 - INFO -   Database: INDUS2_VACUUM_2025
+2025-12-23 10:50:11,174 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 10:50:11,174 - INFO -   Target folder: E:\BACKUP
+2025-12-23 10:50:11,174 - INFO -   Restore path: E:\SQLData
+2025-12-23 10:50:11,174 - INFO -   Yearly Backup Year: 2025
+2025-12-23 10:50:11,174 - INFO - ================================================================================
+2025-12-23 10:50:56,308 - INFO - Script execution time: 0.75 minutes
+2025-12-23 10:50:56,308 - INFO - Script finished.
+2025-12-23 10:58:45,992 - INFO - ================================================================================
+2025-12-23 10:58:45,992 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 10:58:45,992 - INFO - Timestamp: 2025-12-23 10:58:45
+2025-12-23 10:58:45,992 - INFO - ================================================================================
+2025-12-23 10:58:45,992 - INFO - Configuration:
+2025-12-23 10:58:45,992 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 10:58:45,992 - INFO -   Database: INDUS2_VACUUM_2025
+2025-12-23 10:58:45,992 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 10:58:45,992 - INFO -   Target folder: E:\BACKUP
+2025-12-23 10:58:45,992 - INFO -   Restore path: E:\SQLData
+2025-12-23 10:58:45,992 - INFO -   Yearly Backup Year: 2025
+2025-12-23 10:58:45,992 - INFO - ================================================================================
+2025-12-23 10:58:51,984 - INFO - Checking if database exists...
+2025-12-23 10:58:56,490 - INFO - Database 'INDUS2_VACUUM_2025' does not exist
+2025-12-23 10:58:56,497 - INFO - Database 'INDUS2_VACUUM_2025' does not exist - will create new
+2025-12-23 10:58:56,497 - INFO - Starting restore of 'INDUS2_VACUUM_2025'
+2025-12-23 10:58:56,497 - INFO - Restore path: E:\SQLData
+2025-12-23 10:58:56,497 - INFO - Connecting to SQL Server
+2025-12-23 10:58:56,593 - INFO - Executing RESTORE statement
+2025-12-23 10:58:56,609 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The operating system returned the error '32(The process cannot access the file because it is being used by another process.)' while attempting 'RestoreContainer::ValidateTargetForCreation' on 'E:\\SQLData\\INDUS2_VACUUM_2025.mdf'. (3634) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_2025.mdf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\PARTITIONING\AUTOMATION\RPB_draft.py", line 565, in restore_database_from_file
+    cursor.execute(restore_sql)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The operating system returned the error '32(The process cannot access the file because it is being used by another process.)' while attempting 'RestoreContainer::ValidateTargetForCreation' on 'E:\\SQLData\\INDUS2_VACUUM_2025.mdf'. (3634) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_2025.mdf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-23 10:58:56,611 - ERROR - \u274c Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]The operating system returned the error '32(The process cannot access the file because it is being used by another process.)' while attempting 'RestoreContainer::ValidateTargetForCreation' on 'E:\\SQLData\\INDUS2_VACUUM_2025.mdf'. (3634) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]File 'INDUS2_VACUUM' cannot be restored to 'E:\\SQLData\\INDUS2_VACUUM_2025.mdf'. Use WITH MOVE to identify a valid location for the file. (3156); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-23 10:58:56,611 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-23 10:58:56,611 - INFO - Script execution time: 0.18 minutes
+2025-12-23 10:58:56,611 - INFO - Script finished.
+2025-12-23 10:59:54,964 - INFO - ================================================================================
+2025-12-23 10:59:54,964 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 10:59:54,964 - INFO - Timestamp: 2025-12-23 10:59:54
+2025-12-23 10:59:54,964 - INFO - ================================================================================
+2025-12-23 10:59:54,964 - INFO - Configuration:
+2025-12-23 10:59:54,964 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 10:59:54,964 - INFO -   Database: INDUS2_VACUUM_2024
+2025-12-23 10:59:54,964 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 10:59:54,964 - INFO -   Target folder: E:\BACKUP
+2025-12-23 10:59:54,964 - INFO -   Restore path: E:\SQLData
+2025-12-23 10:59:54,964 - INFO -   Yearly Backup Year: 2024
+2025-12-23 10:59:54,964 - INFO - ================================================================================
+2025-12-23 10:59:57,954 - INFO - Checking if database exists...
+2025-12-23 11:00:02,056 - INFO - Database 'INDUS2_VACUUM_2024' does not exist
+2025-12-23 11:00:02,056 - INFO - Database 'INDUS2_VACUUM_2024' does not exist - will create new
+2025-12-23 11:00:02,056 - INFO - Starting restore of 'INDUS2_VACUUM_2024'
+2025-12-23 11:00:02,056 - INFO - Restore path: E:\SQLData
+2025-12-23 11:00:02,056 - INFO - Connecting to SQL Server
+2025-12-23 11:00:02,105 - INFO - Executing RESTORE statement
+2025-12-23 11:00:02,122 - ERROR - Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]There is insufficient free space on disk volume 'E:\\' to create the database. The database requires 235012292608 additional free bytes, while only 126130708480 bytes are available. (3257) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\PARTITIONING\AUTOMATION\RPB_draft.py", line 565, in restore_database_from_file
+    cursor.execute(restore_sql)
+pyodbc.ProgrammingError: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]There is insufficient free space on disk volume 'E:\\' to create the database. The database requires 235012292608 additional free bytes, while only 126130708480 bytes are available. (3257) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-23 11:00:02,122 - ERROR - \u274c Unexpected error in restoration: ('42000', "[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]There is insufficient free space on disk volume 'E:\\' to create the database. The database requires 235012292608 additional free bytes, while only 126130708480 bytes are available. (3257) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Problems were identified while planning for the RESTORE statement. Previous messages provide details. (3119); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)")
+2025-12-23 11:00:02,122 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-23 11:00:02,122 - INFO - Script execution time: 0.12 minutes
+2025-12-23 11:00:02,122 - INFO - Script finished.
+2025-12-23 11:01:14,178 - INFO - ================================================================================
+2025-12-23 11:01:14,178 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 11:01:14,178 - INFO - Timestamp: 2025-12-23 11:01:14
+2025-12-23 11:01:14,178 - INFO - ================================================================================
+2025-12-23 11:01:14,178 - INFO - Configuration:
+2025-12-23 11:01:14,178 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 11:01:14,178 - INFO -   Database: INDUS2_VACUUM_2024
+2025-12-23 11:01:14,178 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 11:01:14,178 - INFO -   Target folder: E:\BACKUP
+2025-12-23 11:01:14,178 - INFO -   Restore path: D:\SQLData
+2025-12-23 11:01:14,178 - INFO -   Yearly Backup Year: 2024
+2025-12-23 11:01:14,178 - INFO - ================================================================================
+2025-12-23 11:01:21,450 - INFO - Checking if database exists...
+2025-12-23 11:01:25,531 - INFO - Database 'INDUS2_VACUUM_2024' does not exist
+2025-12-23 11:01:25,531 - INFO - Database 'INDUS2_VACUUM_2024' does not exist - will create new
+2025-12-23 11:01:25,531 - INFO - Starting restore of 'INDUS2_VACUUM_2024'
+2025-12-23 11:01:25,531 - INFO - Restore path: D:\SQLData
+2025-12-23 11:01:25,531 - INFO - Connecting to SQL Server
+2025-12-23 11:01:25,584 - INFO - Executing RESTORE statement
+2025-12-23 11:12:56,480 - INFO - \u2713 Database restored successfully. State: RESTORING
+2025-12-23 11:12:56,480 - INFO - \u2705 Database restored successfully. State: RESTORING
+2025-12-23 11:12:56,528 - ERROR - ================================================================================
+2025-12-23 11:12:56,528 - ERROR - \u274c SCRIPT ABORTED DUE TO ERROR
+2025-12-23 11:12:56,528 - ERROR - Error: ('42000', '[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]ALTER DATABASE is not permitted while a database is in the Restoring state. (5052) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]ALTER DATABASE statement failed. (5069)')
+2025-12-23 11:12:56,528 - ERROR - ================================================================================
+2025-12-23 11:12:56,544 - INFO - Script execution time: 11.71 minutes
+2025-12-23 11:12:56,544 - INFO - Script finished.
+2025-12-23 11:29:39,962 - INFO - ================================================================================
+2025-12-23 11:29:39,962 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 11:29:39,962 - INFO - Timestamp: 2025-12-23 11:29:39
+2025-12-23 11:29:39,962 - INFO - ================================================================================
+2025-12-23 11:29:39,962 - INFO - Configuration:
+2025-12-23 11:29:39,962 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 11:29:39,962 - INFO -   Database: INDUS2_VACUUM_2024
+2025-12-23 11:29:39,962 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 11:29:39,962 - INFO -   Target folder: E:\BACKUP
+2025-12-23 11:29:39,962 - INFO -   Restore path: D:\SQLData
+2025-12-23 11:29:39,962 - INFO -   Yearly Backup Year: 2024
+2025-12-23 11:29:39,962 - INFO - ================================================================================
+2025-12-23 11:29:51,063 - INFO - Checking if database exists...
+2025-12-23 11:29:55,152 - INFO - Database exists - Name: INDUS2_VACUUM_2024, State: RESTORING, Recovery: FULL
+2025-12-23 11:29:55,152 - INFO - Database 'INDUS2_VACUUM_2024' exists
+2025-12-23 11:29:55,153 - INFO - Current state: RESTORING
+2025-12-23 11:29:55,153 - INFO - Recovery model: FULL
+2025-12-23 11:29:55,153 - INFO - Source file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 11:30:01,725 - INFO - User confirmed restoration
+2025-12-23 11:30:01,725 - INFO - Killing all connections to database: INDUS2_VACUUM_2024
+2025-12-23 11:30:01,725 - INFO - Setting database to SINGLE_USER mode...
+2025-12-23 11:30:01,725 - ERROR - Error killing database connections: ('42000', '[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]ALTER DATABASE is not permitted while a database is in the Restoring state. (5052) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]ALTER DATABASE statement failed. (5069)')
+2025-12-23 11:30:01,725 - ERROR - Failed to kill database connections
+2025-12-23 11:30:01,725 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-23 11:30:01,725 - INFO - Script execution time: 0.36 minutes
+2025-12-23 11:30:01,725 - INFO - Script finished.
+2025-12-23 11:30:23,604 - INFO - ================================================================================
+2025-12-23 11:30:23,604 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 11:30:23,604 - INFO - Timestamp: 2025-12-23 11:30:23
+2025-12-23 11:30:23,604 - INFO - ================================================================================
+2025-12-23 11:30:23,604 - INFO - Configuration:
+2025-12-23 11:30:23,604 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 11:30:23,604 - INFO -   Database: INDUS2_VACUUM_2024
+2025-12-23 11:30:23,604 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 11:30:23,604 - INFO -   Target folder: E:\BACKUP
+2025-12-23 11:30:23,604 - INFO -   Restore path: D:\SQLData
+2025-12-23 11:30:23,604 - INFO -   Yearly Backup Year: 2024
+2025-12-23 11:30:23,604 - INFO - ================================================================================
+2025-12-23 11:30:27,731 - INFO - Checking if database exists...
+2025-12-23 11:30:31,840 - INFO - Database 'INDUS2_VACUUM_2024' does not exist
+2025-12-23 11:30:31,840 - INFO - Database 'INDUS2_VACUUM_2024' does not exist - will create new
+2025-12-23 11:30:31,840 - INFO - Starting restore of 'INDUS2_VACUUM_2024'
+2025-12-23 11:30:31,840 - INFO - Restore path: D:\SQLData
+2025-12-23 11:30:31,840 - INFO - Connecting to SQL Server
+2025-12-23 11:30:31,886 - INFO - Executing RESTORE statement
+2025-12-23 11:31:58,406 - INFO - Waiting for restore to complete...
+2025-12-23 11:56:07,555 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:08,571 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:09,576 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:10,587 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:11,592 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:12,604 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:13,610 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:14,619 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:15,632 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:16,648 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:17,651 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:18,793 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:19,826 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:20,994 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:22,026 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:23,062 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:24,124 - WARNING - Polling failed: progress_callback() takes 1 positional argument but 2 were given
+2025-12-23 11:56:24,528 - WARNING - Restoration cancelled by user (Ctrl+C)
+2025-12-23 11:56:24,540 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-23 11:56:24,540 - INFO - Script execution time: 26.02 minutes
+2025-12-23 11:56:24,540 - INFO - Script finished.
+2025-12-23 12:00:44,441 - INFO - ================================================================================
+2025-12-23 12:00:44,441 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-23 12:00:44,441 - INFO - Timestamp: 2025-12-23 12:00:44
+2025-12-23 12:00:44,441 - INFO - ================================================================================
+2025-12-23 12:00:44,441 - INFO - Configuration:
+2025-12-23 12:00:44,441 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-23 12:00:44,441 - INFO -   Database: INDUS2_VACUUM_2024
+2025-12-23 12:00:44,441 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-23 12:00:44,441 - INFO -   Target folder: E:\BACKUP
+2025-12-23 12:00:44,441 - INFO -   Restore path: D:\SQLData
+2025-12-23 12:00:44,441 - INFO -   Yearly Backup Year: 2024
+2025-12-23 12:00:44,441 - INFO - ================================================================================
+2025-12-23 12:00:50,326 - INFO - ================================================================================
+2025-12-23 12:00:50,326 - INFO - PURGING YEARS
+2025-12-23 12:00:50,326 - INFO - ================================================================================
+2025-12-23 12:00:50,326 - INFO - Years to purge: [2025, 2026, 2022, 2023]
+2025-12-23 12:00:50,326 - INFO - Years to keep: [2024]
+2025-12-23 12:00:50,326 - INFO - ------------------------------------------------------------
+2025-12-23 12:00:50,326 - INFO - Purging year: 2025
+2025-12-23 12:03:27,843 - INFO - \u2713 Year 2025 purged successfully
+2025-12-23 12:03:27,843 - INFO - ------------------------------------------------------------
+2025-12-23 12:03:27,843 - INFO - Purging year: 2026
+2025-12-23 12:03:31,294 - INFO - \u2713 Year 2026 purged successfully
+2025-12-23 12:03:31,294 - INFO - ------------------------------------------------------------
+2025-12-23 12:03:31,294 - INFO - Purging year: 2022
+2025-12-23 12:03:31,351 - INFO - \u2713 Year 2022 purged successfully
+2025-12-23 12:03:31,351 - INFO - ------------------------------------------------------------
+2025-12-23 12:03:31,351 - INFO - Purging year: 2023
+2025-12-23 12:15:33,377 - INFO - \u2713 Year 2023 purged successfully
+2025-12-23 12:15:33,377 - INFO - \u2713 All years purged successfully
+2025-12-23 12:15:33,377 - INFO - ================================================================================
+2025-12-23 12:15:33,377 - INFO - FINAL CLEANUP AND YEARLY BACKUP
+2025-12-23 12:15:33,377 - INFO - ================================================================================
+2025-12-23 12:15:33,377 - INFO - Shrinking database...
+2025-12-23 14:10:01,652 - INFO - \u2713 Database shrunk successfully
+2025-12-23 14:10:01,660 - INFO - Dropping indexes for rebuild...
+2025-12-23 14:16:33,961 - INFO - \u2713 Indexes dropped
+2025-12-23 14:16:33,967 - INFO - Recreating indexes...
+2025-12-23 14:16:33,968 - INFO - ================================================================================
+2025-12-23 14:16:33,970 - INFO - CREATING INDEXES
+2025-12-23 14:16:33,970 - INFO - ================================================================================
+2025-12-23 14:16:33,970 - INFO - Connecting to database...
+2025-12-23 14:16:33,979 - INFO - Building index creation script...
+2025-12-23 14:16:33,980 - INFO - Executing index creation...
+2025-12-23 16:42:01,660 - INFO - \u2713 Indexes created successfully
+2025-12-23 16:42:01,664 - INFO - Creating final yearly backup...
+2025-12-23 16:42:01,680 - INFO - Backup file: E:\BACKUP\INDUS2_VACUUM_2024_[2024]_Yearly_20251223_164201.bak
+2025-12-23 16:52:58,161 - INFO - \u2713 Yearly backup created successfully (8.21 GB)
+2025-12-23 16:52:58,161 - INFO - ================================================================================
+2025-12-23 16:52:58,162 - INFO - \u2713 ALL PROCESSES COMPLETED SUCCESSFULLY!
+2025-12-23 16:52:58,163 - INFO - ================================================================================
+2025-12-23 16:52:58,165 - INFO - ================================================================================
+2025-12-23 16:52:58,165 - INFO - \u2713 SCRIPT COMPLETED SUCCESSFULLY
+2025-12-23 16:52:58,167 - INFO - Total execution time: 292.23 minutes
+2025-12-23 16:52:58,167 - INFO - ================================================================================
+2025-12-23 16:52:58,167 - INFO - Script execution time: 292.23 minutes
+2025-12-23 16:52:58,167 - INFO - Script finished.
+2025-12-24 16:12:33,792 - INFO - ================================================================================
+2025-12-24 16:12:33,792 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-24 16:12:33,792 - INFO - Timestamp: 2025-12-24 16:12:33
+2025-12-24 16:12:33,792 - INFO - ================================================================================
+2025-12-24 16:12:33,792 - INFO - Configuration:
+2025-12-24 16:12:33,792 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-24 16:12:33,792 - INFO -   Database: INDUS2_VACUUM_2024
+2025-12-24 16:12:33,792 - INFO -   Source Master file: E:\BACKUP\INDUS2_VACUUM_Partitioned_MASTER_20251210_190523.bak
+2025-12-24 16:12:33,792 - INFO -   Target folder: E:\BACKUP
+2025-12-24 16:12:33,792 - INFO -   Restore path: D:\SQLData
+2025-12-24 16:12:33,792 - INFO -   Yearly Backup Year: 2024
+2025-12-24 16:12:33,792 - INFO - ================================================================================
+2025-12-24 16:12:36,275 - INFO - Checking if database exists...
+2025-12-24 16:12:40,734 - INFO - Database 'INDUS2_VACUUM_2024' does not exist
+2025-12-24 16:12:40,734 - INFO - Database 'INDUS2_VACUUM_2024' does not exist - will create new
+2025-12-24 16:12:40,734 - INFO - Starting restore of 'INDUS2_VACUUM_2024'
+2025-12-24 16:12:40,734 - INFO - Restore path: D:\SQLData
+2025-12-24 16:12:40,734 - INFO - Connecting to SQL Server
+2025-12-24 16:12:40,832 - INFO - Executing RESTORE statement
+2025-12-24 16:12:40,832 - INFO - Progress: 0.0% complete
+2025-12-24 16:14:07,704 - INFO - Waiting for restore to complete...
+2025-12-24 16:38:01,411 - INFO - Monitoring restore progress...
+2025-12-24 16:38:03,478 - INFO - Restore completed - database is ONLINE
+2025-12-24 16:38:03,478 - INFO - Progress: 100.0% complete
+2025-12-24 16:38:03,478 - INFO - Verifying final database state...
+2025-12-24 16:38:03,478 - INFO - \u2713 Database restored successfully and is ONLINE
+2025-12-24 16:38:03,478 - INFO - Progress: 100.0% complete
+2025-12-24 16:38:03,478 - INFO - \u2705 Database restored successfully. State: ONLINE
+2025-12-24 16:38:03,490 - INFO - ================================================================================
+2025-12-24 16:38:03,490 - INFO - PURGING YEARS
+2025-12-24 16:38:03,490 - INFO - ================================================================================
+2025-12-24 16:38:03,490 - INFO - Years to purge: [2025, 2026, 2022, 2023]
+2025-12-24 16:38:03,490 - INFO - Years to keep: [2024]
+2025-12-24 16:38:03,490 - INFO - ------------------------------------------------------------
+2025-12-24 16:38:03,490 - INFO - Purging year: 2025
+2025-12-24 16:40:43,811 - INFO - \u2713 Year 2025 purged successfully
+2025-12-24 16:40:43,827 - INFO - ------------------------------------------------------------
+2025-12-24 16:40:43,827 - INFO - Purging year: 2026
+2025-12-24 16:40:47,289 - INFO - \u2713 Year 2026 purged successfully
+2025-12-24 16:40:47,289 - INFO - ------------------------------------------------------------
+2025-12-24 16:40:47,289 - INFO - Purging year: 2022
+2025-12-24 16:40:47,401 - INFO - \u2713 Year 2022 purged successfully
+2025-12-24 16:40:47,417 - INFO - ------------------------------------------------------------
+2025-12-24 16:40:47,417 - INFO - Purging year: 2023
+2025-12-24 16:53:24,835 - INFO - \u2713 Year 2023 purged successfully
+2025-12-24 16:53:24,848 - INFO - \u2713 All years purged successfully
+2025-12-24 16:53:24,848 - INFO - ================================================================================
+2025-12-24 16:53:24,848 - INFO - FINAL CLEANUP AND YEARLY BACKUP
+2025-12-24 16:53:24,861 - INFO - ================================================================================
+2025-12-24 16:53:24,861 - INFO - Shrinking database...
+2025-12-24 18:45:40,467 - INFO - \u2713 Database shrunk successfully
+2025-12-24 18:45:40,467 - INFO - Dropping indexes for rebuild...
+2025-12-24 18:51:53,839 - INFO - \u2713 Indexes dropped
+2025-12-24 18:51:53,845 - INFO - Recreating indexes...
+2025-12-24 18:51:53,845 - INFO - ================================================================================
+2025-12-24 18:51:53,845 - INFO - CREATING INDEXES
+2025-12-24 18:51:53,845 - INFO - ================================================================================
+2025-12-24 18:51:53,849 - INFO - Connecting to database...
+2025-12-24 18:51:53,855 - INFO - Building index creation script...
+2025-12-24 18:51:53,855 - INFO - Executing index creation...
+2025-12-24 21:22:36,417 - INFO - \u2713 Indexes created successfully
+2025-12-24 21:22:36,417 - INFO - Creating final yearly backup...
+2025-12-24 21:22:36,433 - INFO - Backup file: E:\BACKUP\INDUS2_VACUUM_2024_[2024]_Yearly_20251224_212236.bak
+2025-12-24 21:31:05,983 - INFO - \u2713 Yearly backup created successfully (8.21 GB)
+2025-12-24 21:31:05,983 - INFO - ================================================================================
+2025-12-24 21:31:05,983 - INFO - \u2713 ALL PROCESSES COMPLETED SUCCESSFULLY!
+2025-12-24 21:31:05,983 - INFO - ================================================================================
+2025-12-24 21:31:05,983 - INFO - ================================================================================
+2025-12-24 21:31:05,985 - INFO - \u2713 SCRIPT COMPLETED SUCCESSFULLY
+2025-12-24 21:31:05,985 - INFO - Total execution time: 318.54 minutes
+2025-12-24 21:31:05,985 - INFO - ================================================================================
+2025-12-24 21:31:05,985 - INFO - Script execution time: 318.54 minutes
+2025-12-24 21:31:05,985 - INFO - Script finished.
+2025-12-29 10:47:03,530 - INFO - ================================================================================
+2025-12-29 10:47:03,530 - INFO - DATABASE AUTOMATION SCRIPT
+2025-12-29 10:47:03,530 - INFO - Timestamp: 2025-12-29 10:47:03.530754
+2025-12-29 10:47:03,530 - INFO - ================================================================================
+2025-12-29 10:47:03,530 - INFO - Configuration:
+2025-12-29 10:47:03,530 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-29 10:47:03,530 - INFO -   Database: INDUS2_TIMING_2024
+2025-12-29 10:47:03,530 - INFO -   Backup Year: 2024
+2025-12-29 10:47:03,530 - INFO - ================================================================================
+2025-12-29 10:47:09,880 - INFO - 
+================================================================================
+2025-12-29 10:47:09,880 - INFO - Executing: Restore Database
+2025-12-29 10:47:09,880 - INFO - ================================================================================
+2025-12-29 10:47:09,880 - INFO - ================================================================================
+2025-12-29 10:47:09,880 - INFO - Starting database restore from file
+2025-12-29 10:47:09,880 - INFO - ================================================================================
+2025-12-29 10:47:09,880 - ERROR - Script failed: 'DatabaseConfig' object has no attribute 'source_master_file'
+2025-12-29 10:47:23,672 - INFO - ================================================================================
+2025-12-29 10:47:23,672 - INFO - DATABASE AUTOMATION SCRIPT
+2025-12-29 10:47:23,672 - INFO - Timestamp: 2025-12-29 10:47:23.672127
+2025-12-29 10:47:23,672 - INFO - ================================================================================
+2025-12-29 10:47:23,672 - INFO - Configuration:
+2025-12-29 10:47:23,672 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-29 10:47:23,672 - INFO -   Database: INDUS2_TIMING_2024
+2025-12-29 10:47:23,672 - INFO -   Backup Year: 2024
+2025-12-29 10:47:23,672 - INFO - ================================================================================
+2025-12-29 10:47:24,969 - INFO - 
+================================================================================
+2025-12-29 10:47:24,969 - INFO - Executing: Restore Database
+2025-12-29 10:47:24,969 - INFO - ================================================================================
+2025-12-29 10:47:24,969 - INFO - ================================================================================
+2025-12-29 10:47:24,969 - INFO - Starting database restore from file
+2025-12-29 10:47:24,969 - INFO - ================================================================================
+2025-12-29 10:47:24,969 - ERROR - Restore failed: 'DatabaseConfig' object has no attribute '_get_connection_string'
+2025-12-29 10:47:24,969 - ERROR - Restore Database failed: 'DatabaseConfig' object has no attribute '_get_connection_string'
+2025-12-29 10:48:44,442 - INFO - ================================================================================
+2025-12-29 10:48:44,442 - INFO - DATABASE AUTOMATION SCRIPT
+2025-12-29 10:48:44,442 - INFO - Timestamp: 2025-12-29 10:48:44.442352
+2025-12-29 10:48:44,442 - INFO - ================================================================================
+2025-12-29 10:48:44,442 - INFO - Configuration:
+2025-12-29 10:48:44,442 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-29 10:48:44,442 - INFO -   Database: INDUS2_VACUUM_2024
+2025-12-29 10:48:44,442 - INFO -   Backup Year: 2024
+2025-12-29 10:48:44,442 - INFO - ================================================================================
+2025-12-29 10:48:45,550 - INFO - 
+================================================================================
+2025-12-29 10:48:45,550 - INFO - Executing: Restore Database
+2025-12-29 10:48:45,550 - INFO - ================================================================================
+2025-12-29 10:48:45,552 - INFO - ================================================================================
+2025-12-29 10:48:45,552 - INFO - Starting database restore from file
+2025-12-29 10:48:45,552 - INFO - ================================================================================
+2025-12-29 10:48:50,523 - INFO - Executing restore command...
+2025-12-29 11:00:00,908 - INFO - ================================================================================
+2025-12-29 11:00:00,908 - INFO - DATABASE AUTOMATION SCRIPT
+2025-12-29 11:00:00,908 - INFO - Timestamp: 2025-12-29 11:00:00.908768
+2025-12-29 11:00:00,908 - INFO - ================================================================================
+2025-12-29 11:00:00,908 - INFO - Configuration:
+2025-12-29 11:00:00,908 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-29 11:00:00,908 - INFO -   Database: INDUS2_VACUUM_2024
+2025-12-29 11:00:00,908 - INFO -   Backup Year: 2024
+2025-12-29 11:00:00,908 - INFO - ================================================================================
+2025-12-29 11:00:59,506 - INFO - ================================================================================
+2025-12-29 11:00:59,506 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM SCRATCH
+2025-12-29 11:00:59,506 - INFO - Timestamp: 2025-12-29 11:00:59
+2025-12-29 11:00:59,506 - INFO - ================================================================================
+2025-12-29 11:00:59,506 - INFO - Configuration:
+2025-12-29 11:00:59,506 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-29 11:00:59,506 - INFO -   Database: INDUS2_VACUUM_2024
+2025-12-29 11:00:59,506 - INFO -   Source folder: E:\INDUS2_BKP
+2025-12-29 11:00:59,506 - INFO -   Target folder: E:\BACKUP
+2025-12-29 11:00:59,506 - INFO -   Restore path: D:\SQLData
+2025-12-29 11:00:59,506 - INFO -   Yearly Backup Year: 2024
+2025-12-29 11:00:59,506 - INFO - ================================================================================
+2025-12-29 11:01:42,976 - INFO - Script execution time: 0.72 minutes
+2025-12-29 11:01:42,976 - INFO - Script finished.
+2025-12-29 11:01:47,436 - INFO - ================================================================================
+2025-12-29 11:01:47,436 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM SCRATCH
+2025-12-29 11:01:47,436 - INFO - Timestamp: 2025-12-29 11:01:47
+2025-12-29 11:01:47,439 - INFO - ================================================================================
+2025-12-29 11:01:47,439 - INFO - Configuration:
+2025-12-29 11:01:47,439 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-29 11:01:47,439 - INFO -   Database: INDUS1_TIMING24
+2025-12-29 11:01:47,439 - INFO -   Source folder: D:\BACKUP\INDUS1_TIMING
+2025-12-29 11:01:47,439 - INFO -   Target folder: E:\BACKUP
+2025-12-29 11:01:47,439 - INFO -   Restore path: D:\SQLData
+2025-12-29 11:01:47,439 - INFO -   Yearly Backup Year: 2024
+2025-12-29 11:01:47,439 - INFO - ================================================================================
+2025-12-29 11:01:53,206 - INFO - Script execution time: 0.10 minutes
+2025-12-29 11:01:53,206 - INFO - Script finished.
+2025-12-29 11:02:01,573 - INFO - ================================================================================
+2025-12-29 11:02:01,573 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM SCRATCH
+2025-12-29 11:02:01,573 - INFO - Timestamp: 2025-12-29 11:02:01
+2025-12-29 11:02:01,573 - INFO - ================================================================================
+2025-12-29 11:02:01,573 - INFO - Configuration:
+2025-12-29 11:02:01,573 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-29 11:02:01,573 - INFO -   Database: INDUS1_TIMING24
+2025-12-29 11:02:01,573 - INFO -   Source folder: D:\BACKUP\INDUS1_TIMING
+2025-12-29 11:02:01,573 - INFO -   Target folder: E:\BACKUP
+2025-12-29 11:02:01,573 - INFO -   Restore path: D:\SQLData
+2025-12-29 11:02:01,573 - INFO -   Yearly Backup Year: 2024
+2025-12-29 11:02:01,573 - INFO - ================================================================================
+2025-12-29 11:02:02,808 - INFO - Checking if database exists...
+2025-12-29 11:02:07,376 - INFO - Database 'INDUS1_TIMING24' does not exist
+2025-12-29 11:02:07,376 - INFO - Database 'INDUS1_TIMING24' does not exist - will create new
+2025-12-29 11:02:07,376 - INFO - Starting restore of 'INDUS1_TIMING24'
+2025-12-29 11:02:07,376 - INFO - Source folder: D:\BACKUP\INDUS1_TIMING
+2025-12-29 11:02:07,376 - INFO - Restore path: D:\SQLData
+2025-12-29 11:02:07,376 - INFO - ================================================================================
+2025-12-29 11:02:07,376 - INFO - Starting database restore operation
+2025-12-29 11:02:07,376 - INFO - ================================================================================
+2025-12-29 11:02:07,376 - INFO - Scanning backup folder: D:\BACKUP\INDUS1_TIMING
+2025-12-29 11:02:07,376 - INFO - Found 2 backup file(s) in folder
+2025-12-29 11:02:07,402 - INFO - \u2713 Valid backup: INDUS1_TIMING.bak (Type: Database)
+2025-12-29 11:02:07,415 - INFO - \u2713 Valid backup: INDUS1_TIMING_20170411095916.trn (Type: Transaction Log)
+2025-12-29 11:02:07,415 - INFO - Found 1 full backup(s) and 1 log backup(s)
+2025-12-29 11:02:07,415 - INFO - Selected backup chain: 2 file(s)
+2025-12-29 11:02:07,415 - INFO - Status: Found 2 backup(s) in folder
+2025-12-29 11:02:07,415 - INFO - Connecting to SQL Server: DESKTOP-4VRJ480
+2025-12-29 11:02:07,415 - INFO - Connection established successfully
+2025-12-29 11:02:07,415 - INFO - ------------------------------------------------------------
+2025-12-29 11:02:07,415 - INFO - Processing backup 1/2
+2025-12-29 11:02:07,415 - INFO - Type: Database
+2025-12-29 11:02:07,415 - INFO - File: INDUS1_TIMING.bak
+2025-12-29 11:02:07,415 - INFO - Status: Restoring Database (1/2)
+2025-12-29 11:02:07,415 - INFO - Building RESTORE DATABASE command...
+2025-12-29 11:02:07,431 - INFO - Backup contains 2 file(s)
+2025-12-29 11:02:07,431 - INFO - Using custom restore path: D:\SQLData
+2025-12-29 11:02:07,431 - INFO - Using REPLACE option to overwrite existing database
+2025-12-29 11:02:07,431 - INFO - Using NORECOVERY (more backups to apply)
+2025-12-29 11:02:07,431 - INFO - Executing restore command...
+2025-12-29 11:02:07,431 - INFO - Status: Executing restore command...
+2025-12-29 11:02:07,431 - INFO - Progress monitor started
+2025-12-29 11:02:07,814 - ERROR - SQL Server error during restore: ('42000', '[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Read on "D:\\BACKUP\\INDUS1_TIMING\\INDUS1_TIMING.bak" failed: 13(The data is invalid.) (3203) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)')
+2025-12-29 11:02:07,814 - ERROR - SQL Server error: ('42000', '[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Read on "D:\\BACKUP\\INDUS1_TIMING\\INDUS1_TIMING.bak" failed: 13(The data is invalid.) (3203) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)')
+2025-12-29 11:02:11,532 - ERROR - \u274c SQL Server error: ('42000', '[42000] [Microsoft][ODBC SQL Server Driver][SQL Server]Read on "D:\\BACKUP\\INDUS1_TIMING\\INDUS1_TIMING.bak" failed: 13(The data is invalid.) (3203) (SQLExecDirectW); [42000] [Microsoft][ODBC SQL Server Driver][SQL Server]RESTORE DATABASE is terminating abnormally. (3013)')
+2025-12-29 11:02:11,532 - ERROR - Restoration failed. Aborting remaining steps.
+2025-12-29 11:02:11,532 - INFO - Script execution time: 0.17 minutes
+2025-12-29 11:02:11,532 - INFO - Script finished.
+2025-12-29 11:02:45,088 - INFO - ================================================================================
+2025-12-29 11:02:45,088 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM SCRATCH
+2025-12-29 11:02:45,100 - INFO - Timestamp: 2025-12-29 11:02:45
+2025-12-29 11:02:45,100 - INFO - ================================================================================
+2025-12-29 11:02:45,100 - INFO - Configuration:
+2025-12-29 11:02:45,100 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-29 11:02:45,100 - INFO -   Database: TESTDB24
+2025-12-29 11:02:45,100 - INFO -   Source folder: D:\BACKUP\TESTDB
+2025-12-29 11:02:45,100 - INFO -   Target folder: E:\BACKUP
+2025-12-29 11:02:45,100 - INFO -   Restore path: D:\SQLData
+2025-12-29 11:02:45,100 - INFO -   Yearly Backup Year: 2024
+2025-12-29 11:02:45,100 - INFO - ================================================================================
+2025-12-29 11:02:48,196 - INFO - Checking if database exists...
+2025-12-29 11:02:52,346 - INFO - Database 'TESTDB24' does not exist
+2025-12-29 11:02:52,346 - INFO - Database 'TESTDB24' does not exist - will create new
+2025-12-29 11:02:52,346 - INFO - Starting restore of 'TESTDB24'
+2025-12-29 11:02:52,356 - INFO - Source folder: D:\BACKUP\TESTDB
+2025-12-29 11:02:52,356 - INFO - Restore path: D:\SQLData
+2025-12-29 11:02:52,356 - INFO - ================================================================================
+2025-12-29 11:02:52,356 - INFO - Starting database restore operation
+2025-12-29 11:02:52,356 - INFO - ================================================================================
+2025-12-29 11:02:52,356 - INFO - Scanning backup folder: D:\BACKUP\TESTDB
+2025-12-29 11:02:52,356 - INFO - Found 1 backup file(s) in folder
+2025-12-29 11:02:52,403 - INFO - \u2713 Valid backup: TESTDB.bak (Type: Database)
+2025-12-29 11:02:52,403 - INFO - Found 1 full backup(s) and 0 log backup(s)
+2025-12-29 11:02:52,403 - INFO - Selected backup chain: 1 file(s)
+2025-12-29 11:02:52,403 - INFO - Status: Found 1 backup(s) in folder
+2025-12-29 11:02:52,403 - INFO - Connecting to SQL Server: DESKTOP-4VRJ480
+2025-12-29 11:02:52,403 - INFO - Connection established successfully
+2025-12-29 11:02:52,403 - INFO - ------------------------------------------------------------
+2025-12-29 11:02:52,403 - INFO - Processing backup 1/1
+2025-12-29 11:02:52,403 - INFO - Type: Database
+2025-12-29 11:02:52,403 - INFO - File: TESTDB.bak
+2025-12-29 11:02:52,403 - INFO - Status: Restoring Database (1/1)
+2025-12-29 11:02:52,403 - INFO - Building RESTORE DATABASE command...
+2025-12-29 11:02:52,419 - INFO - Backup contains 2 file(s)
+2025-12-29 11:02:52,419 - INFO - Using custom restore path: D:\SQLData
+2025-12-29 11:02:52,419 - INFO - Using REPLACE option to overwrite existing database
+2025-12-29 11:02:52,419 - INFO - Executing restore command...
+2025-12-29 11:02:52,419 - INFO - Status: Executing restore command...
+2025-12-29 11:02:52,419 - INFO - Progress monitor started
+2025-12-29 11:03:34,855 - INFO - \u2713 Database restore completed in 42.44 seconds
+2025-12-29 11:03:34,855 - INFO - Status: Database restore completed
+2025-12-29 11:03:34,855 - INFO - ------------------------------------------------------------
+2025-12-29 11:03:34,855 - INFO - Checking final database state...
+2025-12-29 11:03:34,883 - INFO - \u2713 Database state: ONLINE
+2025-12-29 11:03:34,883 - INFO - Status: COMPLETED
+2025-12-29 11:03:34,883 - INFO - ================================================================================
+2025-12-29 11:03:34,883 - INFO - \u2713 RESTORE COMPLETED SUCCESSFULLY
+2025-12-29 11:03:34,883 - INFO - ================================================================================
+2025-12-29 11:03:35,847 - INFO - \u2705 Restore completed successfully.
+2025-12-29 11:03:35,847 - INFO - ================================================================================
+2025-12-29 11:03:35,847 - INFO - PREPARING DATABASE
+2025-12-29 11:03:35,847 - INFO - ================================================================================
+2025-12-29 11:03:35,847 - INFO - Setting recovery model to SIMPLE...
+2025-12-29 11:03:35,894 - INFO - \u2713 Recovery model set to SIMPLE
+2025-12-29 11:03:35,894 - INFO - Dropping existing clustered indexes...
+2025-12-29 11:04:22,518 - INFO - \u2713 Database preparation completed
+2025-12-29 11:04:22,518 - INFO - ================================================================================
+2025-12-29 11:04:22,518 - INFO - CREATING PARTITIONS
+2025-12-29 11:04:22,518 - INFO - ================================================================================
+2025-12-29 11:04:22,518 - INFO - Partition years: [2022, 2023, 2024, 2025, 2026]
+2025-12-29 11:04:22,518 - INFO - Checking for existing partition scheme...
+2025-12-29 11:04:22,629 - INFO - \u2713 Partition function and scheme created successfully
+2025-12-29 11:04:22,629 - INFO - ================================================================================
+2025-12-29 11:04:22,629 - INFO - CREATING INDEXES
+2025-12-29 11:04:22,629 - INFO - ================================================================================
+2025-12-29 11:04:22,629 - INFO - Connecting to database...
+2025-12-29 11:04:22,629 - INFO - Building index creation script...
+2025-12-29 11:04:22,629 - INFO - Executing index creation...
+2025-12-29 11:05:54,839 - INFO - \u2713 Indexes created successfully
+2025-12-29 11:05:54,839 - INFO - ================================================================================
+2025-12-29 11:05:54,839 - INFO - CREATING TEMPORARY TABLES
+2025-12-29 11:05:54,839 - INFO - ================================================================================
+2025-12-29 11:05:54,839 - INFO - Connecting to database...
+2025-12-29 11:05:54,839 - INFO - Creating temp tables with partition scheme...
+2025-12-29 11:05:55,379 - INFO - \u2713 Temp tables created successfully
+2025-12-29 11:05:55,379 - INFO - ================================================================================
+2025-12-29 11:05:55,379 - INFO - CREATING MASTER BACKUP
+2025-12-29 11:05:55,379 - INFO - ================================================================================
+2025-12-29 11:05:55,379 - INFO - Target backup folder: E:\BACKUP
+2025-12-29 11:05:55,379 - INFO - \u2713 Backup folder ready
+2025-12-29 11:05:55,379 - INFO - Backup file: E:\BACKUP\TESTDB24_Partitioned_MASTER_20251229_110555.bak
+2025-12-29 11:05:55,379 - INFO - Starting backup (this may take a while)...
+2025-12-29 11:06:37,829 - INFO - \u2713 Backup created successfully (1.05 GB)
+2025-12-29 11:06:37,829 - INFO - ================================================================================
+2025-12-29 11:06:37,829 - INFO - PURGING YEARS
+2025-12-29 11:06:37,829 - INFO - ================================================================================
+2025-12-29 11:06:37,829 - INFO - Years to purge: [2025, 2026, 2022, 2023]
+2025-12-29 11:06:37,829 - INFO - Years to keep: [2024]
+2025-12-29 11:06:37,829 - INFO - ------------------------------------------------------------
+2025-12-29 11:06:37,829 - INFO - Purging year: 2025
+2025-12-29 11:06:38,688 - INFO - \u2713 Year 2025 purged successfully
+2025-12-29 11:06:38,688 - INFO - ------------------------------------------------------------
+2025-12-29 11:06:38,688 - INFO - Purging year: 2026
+2025-12-29 11:06:38,778 - INFO - \u2713 Year 2026 purged successfully
+2025-12-29 11:06:38,778 - INFO - ------------------------------------------------------------
+2025-12-29 11:06:38,778 - INFO - Purging year: 2022
+2025-12-29 11:06:38,832 - INFO - \u2713 Year 2022 purged successfully
+2025-12-29 11:06:38,832 - INFO - ------------------------------------------------------------
+2025-12-29 11:06:38,832 - INFO - Purging year: 2023
+2025-12-29 11:06:38,895 - INFO - \u2713 Year 2023 purged successfully
+2025-12-29 11:06:38,895 - INFO - \u2713 All years purged successfully
+2025-12-29 11:06:38,895 - INFO - ================================================================================
+2025-12-29 11:06:38,895 - INFO - FINAL CLEANUP AND YEARLY BACKUP
+2025-12-29 11:06:38,895 - INFO - ================================================================================
+2025-12-29 11:06:38,895 - INFO - Shrinking database...
+2025-12-29 11:06:44,753 - INFO - \u2713 Database shrunk successfully
+2025-12-29 11:06:44,753 - INFO - Dropping indexes for rebuild...
+2025-12-29 11:06:44,879 - INFO - \u2713 Indexes dropped
+2025-12-29 11:06:44,879 - INFO - Recreating indexes...
+2025-12-29 11:06:44,879 - INFO - ================================================================================
+2025-12-29 11:06:44,879 - INFO - CREATING INDEXES
+2025-12-29 11:06:44,879 - INFO - ================================================================================
+2025-12-29 11:06:44,879 - INFO - Connecting to database...
+2025-12-29 11:06:44,879 - INFO - Building index creation script...
+2025-12-29 11:06:44,879 - INFO - Executing index creation...
+2025-12-29 11:06:44,942 - INFO - \u2713 Indexes created successfully
+2025-12-29 11:06:44,942 - INFO - Creating final yearly backup...
+2025-12-29 11:06:44,942 - INFO - Backup file: E:\BACKUP\TESTDB24_[2024]_Yearly_20251229_110644.bak
+2025-12-29 11:06:45,300 - INFO - \u2713 Yearly backup created successfully (0.00 GB)
+2025-12-29 11:06:45,300 - INFO - ================================================================================
+2025-12-29 11:06:45,300 - INFO - \u2713 ALL PROCESSES COMPLETED SUCCESSFULLY!
+2025-12-29 11:06:45,300 - INFO - ================================================================================
+2025-12-29 11:06:45,300 - INFO - ================================================================================
+2025-12-29 11:06:45,300 - INFO - \u2713 SCRIPT COMPLETED SUCCESSFULLY
+2025-12-29 11:06:45,300 - INFO - Total execution time: 4.00 minutes
+2025-12-29 11:06:45,300 - INFO - ================================================================================
+2025-12-29 11:06:45,300 - INFO - Script execution time: 4.00 minutes
+2025-12-29 11:06:45,300 - INFO - Script finished.
+2025-12-29 11:36:38,840 - INFO - ================================================================================
+2025-12-29 11:36:38,840 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-29 11:36:38,840 - INFO - Timestamp: 2025-12-29 11:36:38
+2025-12-29 11:36:38,840 - INFO - ================================================================================
+2025-12-29 11:36:38,840 - INFO - Configuration:
+2025-12-29 11:36:38,840 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-29 11:36:38,840 - INFO -   Database: TESTDB24
+2025-12-29 11:36:38,840 - INFO -   Source Master file: E:\BACKUP\TESTDB_Partitioned_MASTER_20251210_101257.bak
+2025-12-29 11:36:38,840 - INFO -   Target folder: E:\BACKUP
+2025-12-29 11:36:38,840 - INFO -   Restore path: D:\SQLData
+2025-12-29 11:36:38,840 - INFO -   Yearly Backup Year: 2024
+2025-12-29 11:36:38,840 - INFO - ================================================================================
+2025-12-29 11:37:04,355 - INFO - Script execution time: 0.43 minutes
+2025-12-29 11:37:04,355 - INFO - Script finished.
+2025-12-29 11:37:07,734 - INFO - ================================================================================
+2025-12-29 11:37:07,734 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-29 11:37:07,734 - INFO - Timestamp: 2025-12-29 11:37:07
+2025-12-29 11:37:07,734 - INFO - ================================================================================
+2025-12-29 11:37:07,734 - INFO - Configuration:
+2025-12-29 11:37:07,734 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-29 11:37:07,734 - INFO -   Database: TESTDB23
+2025-12-29 11:37:07,734 - INFO -   Source Master file: E:\BACKUP\TESTDB_Partitioned_MASTER_20251210_101257.bak
+2025-12-29 11:37:07,734 - INFO -   Target folder: E:\BACKUP
+2025-12-29 11:37:07,734 - INFO -   Restore path: D:\SQLData
+2025-12-29 11:37:07,734 - INFO -   Yearly Backup Year: 2023
+2025-12-29 11:37:07,734 - INFO - ================================================================================
+2025-12-29 11:37:10,979 - INFO - Checking if database exists...
+2025-12-29 11:37:15,166 - INFO - Database 'TESTDB23' does not exist
+2025-12-29 11:37:15,166 - INFO - Database 'TESTDB23' does not exist - will create new
+2025-12-29 11:37:15,166 - INFO - Starting restore of 'TESTDB23'
+2025-12-29 11:37:15,166 - INFO - Restore path: D:\SQLData
+2025-12-29 11:37:15,166 - INFO - Connecting to SQL Server
+2025-12-29 11:37:15,262 - INFO - Executing RESTORE statement
+2025-12-29 11:37:15,262 - INFO - Progress: 0.0% complete
+2025-12-29 11:37:18,983 - INFO - Waiting for restore to complete...
+2025-12-29 11:37:56,028 - INFO - Monitoring restore progress...
+2025-12-29 11:37:58,052 - INFO - Restore completed - database is ONLINE
+2025-12-29 11:37:58,052 - INFO - Progress: 100.0% complete
+2025-12-29 11:37:58,052 - INFO - Verifying final database state...
+2025-12-29 11:37:58,063 - INFO - \u2713 Database restored successfully and is ONLINE
+2025-12-29 11:37:58,064 - INFO - Progress: 100.0% complete
+2025-12-29 11:37:58,064 - INFO - \u2705 Database restored successfully. State: ONLINE
+2025-12-29 11:37:58,064 - INFO - ================================================================================
+2025-12-29 11:37:58,064 - INFO - PURGING YEARS
+2025-12-29 11:37:58,064 - INFO - ================================================================================
+2025-12-29 11:37:58,064 - INFO - Years to purge: [2024, 2025, 2026, 2022]
+2025-12-29 11:37:58,064 - INFO - Years to keep: [2023]
+2025-12-29 11:37:58,064 - INFO - ------------------------------------------------------------
+2025-12-29 11:37:58,064 - INFO - Purging year: 2024
+2025-12-29 11:37:58,342 - INFO - \u2713 Year 2024 purged successfully
+2025-12-29 11:37:58,342 - INFO - ------------------------------------------------------------
+2025-12-29 11:37:58,343 - INFO - Purging year: 2025
+2025-12-29 11:38:11,138 - INFO - \u2713 Year 2025 purged successfully
+2025-12-29 11:38:11,138 - INFO - ------------------------------------------------------------
+2025-12-29 11:38:11,138 - INFO - Purging year: 2026
+2025-12-29 11:38:11,175 - INFO - \u2713 Year 2026 purged successfully
+2025-12-29 11:38:11,175 - INFO - ------------------------------------------------------------
+2025-12-29 11:38:11,175 - INFO - Purging year: 2022
+2025-12-29 11:38:11,249 - INFO - \u2713 Year 2022 purged successfully
+2025-12-29 11:38:11,249 - INFO - \u2713 All years purged successfully
+2025-12-29 11:38:11,249 - INFO - ================================================================================
+2025-12-29 11:38:11,249 - INFO - FINAL CLEANUP AND YEARLY BACKUP
+2025-12-29 11:38:11,249 - INFO - ================================================================================
+2025-12-29 11:38:11,249 - INFO - Shrinking database...
+2025-12-29 11:38:16,783 - INFO - \u2713 Database shrunk successfully
+2025-12-29 11:38:16,783 - INFO - Dropping indexes for rebuild...
+2025-12-29 11:38:16,924 - INFO - \u2713 Indexes dropped
+2025-12-29 11:38:16,924 - INFO - Recreating indexes...
+2025-12-29 11:38:16,924 - INFO - ================================================================================
+2025-12-29 11:38:16,924 - INFO - CREATING INDEXES
+2025-12-29 11:38:16,924 - INFO - ================================================================================
+2025-12-29 11:38:16,931 - INFO - Connecting to database...
+2025-12-29 11:38:16,931 - INFO - Building index creation script...
+2025-12-29 11:38:16,931 - INFO - Executing index creation...
+2025-12-29 11:38:17,009 - INFO - \u2713 Indexes created successfully
+2025-12-29 11:38:17,009 - INFO - Creating final yearly backup...
+2025-12-29 11:38:17,009 - INFO - Backup file: E:\BACKUP\TESTDB23_[2023]_Yearly_20251229_113817.bak
+2025-12-29 11:38:17,315 - INFO - \u2713 Yearly backup created successfully (0.00 GB)
+2025-12-29 11:38:17,315 - INFO - ================================================================================
+2025-12-29 11:38:17,315 - INFO - \u2713 ALL PROCESSES COMPLETED SUCCESSFULLY!
+2025-12-29 11:38:17,315 - INFO - ================================================================================
+2025-12-29 11:38:17,315 - INFO - ================================================================================
+2025-12-29 11:38:17,315 - INFO - \u2713 SCRIPT COMPLETED SUCCESSFULLY
+2025-12-29 11:38:17,315 - INFO - Total execution time: 1.16 minutes
+2025-12-29 11:38:17,315 - INFO - ================================================================================
+2025-12-29 11:38:17,315 - INFO - Script execution time: 1.16 minutes
+2025-12-29 11:38:17,315 - INFO - Script finished.
+2025-12-29 17:30:05,900 - INFO - ================================================================================
+2025-12-29 17:30:05,900 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM SCRATCH
+2025-12-29 17:30:05,900 - INFO - Timestamp: 2025-12-29 17:30:05
+2025-12-29 17:30:05,900 - INFO - ================================================================================
+2025-12-29 17:30:05,900 - INFO - Configuration:
+2025-12-29 17:30:05,900 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-29 17:30:05,900 - INFO -   Database: INDUS1_RF_2024_2025
+2025-12-29 17:30:05,900 - INFO -   Source folder: D:\BACKUP\INDUS1_RF
+2025-12-29 17:30:05,900 - INFO -   Target folder: E:\BACKUP
+2025-12-29 17:30:05,900 - INFO -   Restore path: E:\SQLData
+2025-12-29 17:30:05,900 - INFO -   Yearly Backup Year: 2024
+2025-12-29 17:30:05,900 - INFO - ================================================================================
+2025-12-29 17:30:13,290 - INFO - Script execution time: 0.12 minutes
+2025-12-29 17:30:13,290 - INFO - Script finished.
+2025-12-29 17:30:20,282 - INFO - ================================================================================
+2025-12-29 17:30:20,282 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM SCRATCH
+2025-12-29 17:30:20,282 - INFO - Timestamp: 2025-12-29 17:30:20
+2025-12-29 17:30:20,282 - INFO - ================================================================================
+2025-12-29 17:30:20,282 - INFO - Configuration:
+2025-12-29 17:30:20,282 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-29 17:30:20,282 - INFO -   Database: INDUS1_RF_2024_2025
+2025-12-29 17:30:20,282 - INFO -   Source folder: D:\BACKUP\INDUS1_RF
+2025-12-29 17:30:20,282 - INFO -   Target folder: E:\BACKUP
+2025-12-29 17:30:20,282 - INFO -   Restore path: E:\SQLData
+2025-12-29 17:30:20,292 - INFO -   Yearly Backup Year: 2024
+2025-12-29 17:30:20,292 - INFO - ================================================================================
+2025-12-29 17:30:21,663 - INFO - Checking if database exists...
+2025-12-29 17:30:26,179 - INFO - Database 'INDUS1_RF_2024_2025' does not exist
+2025-12-29 17:30:26,195 - INFO - Database 'INDUS1_RF_2024_2025' does not exist - will create new
+2025-12-29 17:30:26,195 - INFO - Starting restore of 'INDUS1_RF_2024_2025'
+2025-12-29 17:30:26,195 - INFO - Source folder: D:\BACKUP\INDUS1_RF
+2025-12-29 17:30:26,195 - INFO - Restore path: E:\SQLData
+2025-12-29 17:30:26,195 - INFO - ================================================================================
+2025-12-29 17:30:26,195 - INFO - Starting database restore operation
+2025-12-29 17:30:26,195 - INFO - ================================================================================
+2025-12-29 17:30:26,195 - INFO - Scanning backup folder: D:\BACKUP\INDUS1_RF
+2025-12-29 17:30:26,195 - INFO - Found 2 backup file(s) in folder
+2025-12-29 17:30:27,636 - INFO - \u2713 Valid backup: INDUS1_RF.bak (Type: Database)
+2025-12-29 17:30:29,229 - INFO - \u2713 Valid backup: INDUS1_RF.trn (Type: Transaction Log)
+2025-12-29 17:30:29,229 - INFO - Found 1 full backup(s) and 1 log backup(s)
+2025-12-29 17:30:29,229 - INFO - Selected backup chain: 2 file(s)
+2025-12-29 17:30:29,229 - INFO - Status: Found 2 backup(s) in folder
+2025-12-29 17:30:29,229 - INFO - Connecting to SQL Server: DESKTOP-4VRJ480
+2025-12-29 17:30:29,229 - INFO - Connection established successfully
+2025-12-29 17:30:29,229 - INFO - ------------------------------------------------------------
+2025-12-29 17:30:29,229 - INFO - Processing backup 1/2
+2025-12-29 17:30:29,229 - INFO - Type: Database
+2025-12-29 17:30:29,229 - INFO - File: INDUS1_RF.bak
+2025-12-29 17:30:29,229 - INFO - Status: Restoring Database (1/2)
+2025-12-29 17:30:29,229 - INFO - Building RESTORE DATABASE command...
+2025-12-29 17:30:29,261 - INFO - Backup contains 2 file(s)
+2025-12-29 17:30:29,261 - INFO - Using custom restore path: E:\SQLData
+2025-12-29 17:30:29,261 - INFO - Using REPLACE option to overwrite existing database
+2025-12-29 17:30:29,261 - INFO - Using NORECOVERY (more backups to apply)
+2025-12-29 17:30:29,261 - INFO - Executing restore command...
+2025-12-29 17:30:29,261 - INFO - Status: Executing restore command...
+2025-12-29 17:30:29,261 - INFO - Progress monitor started
+2025-12-29 18:00:32,338 - INFO - Progress: 100.0% complete
+2025-12-29 18:00:32,338 - INFO - Restore progress: 100.0%
+2025-12-29 18:03:04,211 - INFO - \u2713 Database restore completed in 1954.95 seconds
+2025-12-29 18:03:04,211 - INFO - Status: Database restore completed
+2025-12-29 18:03:04,211 - INFO - ------------------------------------------------------------
+2025-12-29 18:03:04,211 - INFO - Processing backup 2/2
+2025-12-29 18:03:04,211 - INFO - Type: Transaction Log
+2025-12-29 18:03:04,211 - INFO - File: INDUS1_RF.trn
+2025-12-29 18:03:04,211 - INFO - Status: Restoring Transaction Log (2/2)
+2025-12-29 18:03:04,211 - INFO - Building RESTORE LOG command...
+2025-12-29 18:03:04,211 - INFO - Using RECOVERY (final restore)
+2025-12-29 18:03:04,211 - INFO - Executing restore command...
+2025-12-29 18:03:04,211 - INFO - Status: Executing restore command...
+2025-12-29 18:11:26,683 - INFO - \u2713 Transaction Log restore completed in 502.47 seconds
+2025-12-29 18:11:26,683 - INFO - Status: Transaction Log restore completed
+2025-12-29 18:11:26,683 - INFO - ------------------------------------------------------------
+2025-12-29 18:11:26,683 - INFO - Checking final database state...
+2025-12-29 18:11:26,719 - INFO - \u2713 Database state: ONLINE
+2025-12-29 18:11:26,719 - INFO - Status: COMPLETED
+2025-12-29 18:11:26,719 - INFO - ================================================================================
+2025-12-29 18:11:26,719 - INFO - \u2713 RESTORE COMPLETED SUCCESSFULLY
+2025-12-29 18:11:26,719 - INFO - ================================================================================
+2025-12-29 18:11:26,719 - INFO - \u2705 Restore completed successfully.
+2025-12-29 18:11:26,719 - INFO - ================================================================================
+2025-12-29 18:11:26,719 - INFO - PREPARING DATABASE
+2025-12-29 18:11:26,719 - INFO - ================================================================================
+2025-12-29 18:11:26,719 - INFO - Setting recovery model to SIMPLE...
+2025-12-29 18:11:26,731 - INFO - \u2713 Recovery model set to SIMPLE
+2025-12-29 18:11:26,731 - INFO - Dropping existing clustered indexes...
+2025-12-29 18:21:39,013 - INFO - \u2713 Database preparation completed
+2025-12-29 18:21:39,013 - INFO - ================================================================================
+2025-12-29 18:21:39,013 - INFO - CREATING PARTITIONS
+2025-12-29 18:21:39,013 - INFO - ================================================================================
+2025-12-29 18:21:39,013 - INFO - Partition years: [2022, 2023, 2024, 2025, 2026]
+2025-12-29 18:21:39,028 - INFO - Checking for existing partition scheme...
+2025-12-29 18:21:39,283 - INFO - \u2713 Partition function and scheme created successfully
+2025-12-29 18:21:39,283 - INFO - ================================================================================
+2025-12-29 18:21:39,283 - INFO - CREATING INDEXES
+2025-12-29 18:21:39,283 - INFO - ================================================================================
+2025-12-29 18:21:39,283 - INFO - Connecting to database...
+2025-12-29 18:21:39,283 - INFO - Building index creation script...
+2025-12-29 18:21:39,283 - INFO - Executing index creation...
+2025-12-29 19:44:04,161 - INFO - \u2713 Indexes created successfully
+2025-12-29 19:44:04,161 - INFO - ================================================================================
+2025-12-29 19:44:04,161 - INFO - CREATING TEMPORARY TABLES
+2025-12-29 19:44:04,161 - INFO - ================================================================================
+2025-12-29 19:44:04,161 - INFO - Connecting to database...
+2025-12-29 19:44:04,161 - INFO - Creating temp tables with partition scheme...
+2025-12-29 19:44:06,034 - INFO - \u2713 Temp tables created successfully
+2025-12-29 19:44:06,050 - INFO - ================================================================================
+2025-12-29 19:44:06,050 - INFO - CREATING MASTER BACKUP
+2025-12-29 19:44:06,050 - INFO - ================================================================================
+2025-12-29 19:44:06,050 - INFO - Target backup folder: E:\BACKUP
+2025-12-29 19:44:06,050 - INFO - \u2713 Backup folder ready
+2025-12-29 19:44:06,050 - INFO - Backup file: E:\BACKUP\INDUS1_RF_2024_2025_Partitioned_MASTER_20251229_194406.bak
+2025-12-29 19:44:06,050 - INFO - Starting backup (this may take a while)...
+2025-12-29 20:01:57,210 - INFO - \u2713 Backup created successfully (15.90 GB)
+2025-12-29 20:01:57,210 - INFO - ================================================================================
+2025-12-29 20:01:57,210 - INFO - PURGING YEARS
+2025-12-29 20:01:57,210 - INFO - ================================================================================
+2025-12-29 20:01:57,210 - INFO - Years to purge: [2026, 2022, 2023]
+2025-12-29 20:01:57,210 - INFO - Years to keep: [2024, 2025]
+2025-12-29 20:01:57,210 - INFO - ------------------------------------------------------------
+2025-12-29 20:01:57,210 - INFO - Purging year: 2026
+2025-12-29 20:02:00,557 - INFO - \u2713 Year 2026 purged successfully
+2025-12-29 20:02:00,557 - INFO - ------------------------------------------------------------
+2025-12-29 20:02:00,557 - INFO - Purging year: 2022
+2025-12-29 20:02:00,609 - INFO - \u2713 Year 2022 purged successfully
+2025-12-29 20:02:00,609 - INFO - ------------------------------------------------------------
+2025-12-29 20:02:00,609 - INFO - Purging year: 2023
+2025-12-29 20:06:13,702 - INFO - \u2713 Year 2023 purged successfully
+2025-12-29 20:06:13,710 - INFO - \u2713 All years purged successfully
+2025-12-29 20:06:13,710 - INFO - ================================================================================
+2025-12-29 20:06:13,710 - INFO - FINAL CLEANUP AND YEARLY BACKUP
+2025-12-29 20:06:13,710 - INFO - ================================================================================
+2025-12-29 20:06:13,710 - INFO - Shrinking database...
+2025-12-29 20:06:15,190 - INFO - \u2713 Database shrunk successfully
+2025-12-29 20:06:15,190 - INFO - Dropping indexes for rebuild...
+2025-12-29 20:14:32,061 - INFO - \u2713 Indexes dropped
+2025-12-29 20:14:32,061 - INFO - Recreating indexes...
+2025-12-29 20:14:32,061 - INFO - ================================================================================
+2025-12-29 20:14:32,061 - INFO - CREATING INDEXES
+2025-12-29 20:14:32,077 - INFO - ================================================================================
+2025-12-29 20:14:32,077 - INFO - Connecting to database...
+2025-12-29 20:14:32,077 - INFO - Building index creation script...
+2025-12-29 20:14:32,077 - INFO - Executing index creation...
+2025-12-29 21:10:07,356 - INFO - \u2713 Indexes created successfully
+2025-12-29 21:10:07,356 - INFO - Creating final yearly backup...
+2025-12-29 21:10:07,356 - INFO - Backup file: E:\BACKUP\INDUS1_RF_2024_2025_[2024, 2025]_Yearly_20251229_211007.bak
+2025-12-29 21:19:48,918 - INFO - \u2713 Yearly backup created successfully (10.56 GB)
+2025-12-29 21:19:48,918 - INFO - ================================================================================
+2025-12-29 21:19:48,918 - INFO - \u2713 ALL PROCESSES COMPLETED SUCCESSFULLY!
+2025-12-29 21:19:48,918 - INFO - ================================================================================
+2025-12-29 21:19:48,918 - INFO - ================================================================================
+2025-12-29 21:19:48,918 - INFO - \u2713 SCRIPT COMPLETED SUCCESSFULLY
+2025-12-29 21:19:48,933 - INFO - Total execution time: 229.48 minutes
+2025-12-29 21:19:48,933 - INFO - ================================================================================
+2025-12-29 21:19:48,933 - INFO - Script execution time: 229.48 minutes
+2025-12-29 21:19:48,933 - INFO - Script finished.
+2025-12-31 11:27:38,427 - INFO - ================================================================================
+2025-12-31 11:27:38,427 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-31 11:27:38,442 - INFO - Timestamp: 2025-12-31 11:27:38
+2025-12-31 11:27:38,442 - INFO - ================================================================================
+2025-12-31 11:27:38,442 - INFO - Configuration:
+2025-12-31 11:27:38,442 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-31 11:27:38,442 - INFO -   Database: INDUS1_RF_2024_2025
+2025-12-31 11:27:38,442 - INFO -   Source Master file: E:\BACKUP\INDUS1_RF_2024_2025_Partitioned_MASTER_20251229_194406.bak
+2025-12-31 11:27:38,442 - INFO -   Target folder: E:\BACKUP
+2025-12-31 11:27:38,442 - INFO -   Restore path: E:\SQLData
+2025-12-31 11:27:38,442 - INFO -   Yearly Backup Year: 2024
+2025-12-31 11:27:38,442 - INFO - ================================================================================
+2025-12-31 11:28:05,220 - WARNING - ================================================================================
+2025-12-31 11:28:05,220 - WARNING - Script interrupted by user (Ctrl+C)
+2025-12-31 11:28:05,220 - WARNING - ================================================================================
+2025-12-31 11:28:05,220 - INFO - Script execution time: 0.45 minutes
+2025-12-31 11:28:05,220 - INFO - Script finished.
+2025-12-31 11:28:09,388 - INFO - ================================================================================
+2025-12-31 11:28:09,388 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM MASTER BACKUP
+2025-12-31 11:28:09,388 - INFO - Timestamp: 2025-12-31 11:28:09
+2025-12-31 11:28:09,388 - INFO - ================================================================================
+2025-12-31 11:28:09,388 - INFO - Configuration:
+2025-12-31 11:28:09,388 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-31 11:28:09,388 - INFO -   Database: INDUS1_RF_2024_2025
+2025-12-31 11:28:09,388 - INFO -   Source Master file: E:\BACKUP\INDUS1_RF_2024_2025_Partitioned_MASTER_20251229_194406.bak
+2025-12-31 11:28:09,388 - INFO -   Target folder: E:\BACKUP
+2025-12-31 11:28:09,388 - INFO -   Restore path: E:\SQLData
+2025-12-31 11:28:09,388 - INFO -   Yearly Backup Year: 2024
+2025-12-31 11:28:09,388 - INFO - ================================================================================
+2025-12-31 11:28:15,811 - INFO - Checking if database exists...
+2025-12-31 11:28:20,060 - INFO - Database 'INDUS1_RF_2024_2025' does not exist
+2025-12-31 11:28:20,060 - INFO - Database 'INDUS1_RF_2024_2025' does not exist - will create new
+2025-12-31 11:28:20,060 - INFO - Starting restore of 'INDUS1_RF_2024_2025'
+2025-12-31 11:28:20,060 - INFO - Restore path: E:\SQLData
+2025-12-31 11:28:20,060 - INFO - Connecting to SQL Server
+2025-12-31 11:28:20,155 - INFO - Executing RESTORE statement
+2025-12-31 11:28:20,155 - INFO - Progress: 0.0% complete
+2025-12-31 11:29:09,633 - INFO - Waiting for restore to complete...
+2025-12-31 11:46:50,564 - INFO - Monitoring restore progress...
+2025-12-31 11:46:52,684 - INFO - Restore completed - database is ONLINE
+2025-12-31 11:46:52,684 - INFO - Progress: 100.0% complete
+2025-12-31 11:46:52,684 - INFO - Verifying final database state...
+2025-12-31 11:46:52,684 - INFO - \u2713 Database restored successfully and is ONLINE
+2025-12-31 11:46:52,684 - INFO - Progress: 100.0% complete
+2025-12-31 11:46:52,684 - INFO - \u2705 Database restored successfully. State: ONLINE
+2025-12-31 11:46:52,684 - INFO - ================================================================================
+2025-12-31 11:46:52,684 - INFO - PURGING YEARS
+2025-12-31 11:46:52,684 - INFO - ================================================================================
+2025-12-31 11:46:52,684 - INFO - Years to purge: [2026, 2022, 2023]
+2025-12-31 11:46:52,684 - INFO - Years to keep: [2024, 2025]
+2025-12-31 11:46:52,684 - INFO - ------------------------------------------------------------
+2025-12-31 11:46:52,684 - INFO - Purging year: 2026
+2025-12-31 11:47:02,552 - INFO - \u2713 Year 2026 purged successfully
+2025-12-31 11:47:02,552 - INFO - ------------------------------------------------------------
+2025-12-31 11:47:02,552 - INFO - Purging year: 2022
+2025-12-31 11:47:02,622 - INFO - \u2713 Year 2022 purged successfully
+2025-12-31 11:47:02,622 - INFO - ------------------------------------------------------------
+2025-12-31 11:47:02,622 - INFO - Purging year: 2023
+2025-12-31 11:50:44,587 - INFO - \u2713 Year 2023 purged successfully
+2025-12-31 11:50:44,593 - INFO - \u2713 All years purged successfully
+2025-12-31 11:50:44,593 - INFO - ================================================================================
+2025-12-31 11:50:44,593 - INFO - FINAL CLEANUP AND YEARLY BACKUP
+2025-12-31 11:50:44,593 - INFO - ================================================================================
+2025-12-31 11:50:44,593 - INFO - Shrinking database...
+2025-12-31 12:57:08,001 - INFO - \u2713 Database shrunk successfully
+2025-12-31 12:57:08,009 - INFO - Rebuilding indexes...
+2025-12-31 12:57:08,025 - ERROR - SQL Server error during final backup: ('07002', '[07002] [Microsoft][ODBC SQL Server Driver]COUNT field incorrect or syntax error (0) (SQLExecDirectW)')
+2025-12-31 12:57:08,056 - ERROR - ================================================================================
+2025-12-31 12:57:08,056 - ERROR - \u274c SCRIPT ABORTED DUE TO ERROR
+2025-12-31 12:57:08,056 - ERROR - Error: ('07002', '[07002] [Microsoft][ODBC SQL Server Driver]COUNT field incorrect or syntax error (0) (SQLExecDirectW)')
+2025-12-31 12:57:08,056 - ERROR - ================================================================================
+2025-12-31 12:57:08,056 - INFO - Script execution time: 88.98 minutes
+2025-12-31 12:57:08,056 - INFO - Script finished.
+2025-12-31 14:47:40,401 - INFO - ================================================================================
+2025-12-31 14:47:40,401 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM SCRATCH
+2025-12-31 14:47:40,401 - INFO - Timestamp: 2025-12-31 14:47:40
+2025-12-31 14:47:40,401 - INFO - ================================================================================
+2025-12-31 14:47:40,401 - INFO - Configuration:
+2025-12-31 14:47:40,401 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-31 14:47:40,404 - INFO -   Database: INDUS1_RSS
+2025-12-31 14:47:40,404 - INFO -   Source folder: D:\BACKUP\INDUS1_RSS
+2025-12-31 14:47:40,404 - INFO -   Target folder: E:\BACKUP
+2025-12-31 14:47:40,404 - INFO -   Restore path: E:\SQLData
+2025-12-31 14:47:40,404 - INFO -   Yearly Backup Year: [2024, 2025]
+2025-12-31 14:47:40,404 - INFO - ================================================================================
+2025-12-31 14:47:46,759 - INFO - Checking if database exists...
+2025-12-31 14:47:51,036 - INFO - Database 'INDUS1_RSS' does not exist
+2025-12-31 14:47:51,036 - INFO - Database 'INDUS1_RSS' does not exist - will create new
+2025-12-31 14:47:51,036 - INFO - Starting restore of 'INDUS1_RSS'
+2025-12-31 14:47:51,036 - INFO - Source folder: D:\BACKUP\INDUS1_RSS
+2025-12-31 14:47:51,036 - INFO - Restore path: E:\SQLData
+2025-12-31 14:47:51,036 - INFO - ================================================================================
+2025-12-31 14:47:51,036 - INFO - Starting database restore operation
+2025-12-31 14:47:51,036 - INFO - ================================================================================
+2025-12-31 14:47:51,036 - INFO - Scanning backup folder: D:\BACKUP\INDUS1_RSS
+2025-12-31 14:47:51,036 - INFO - Found 2 backup file(s) in folder
+2025-12-31 14:47:51,129 - INFO - \u2713 Valid backup: INDUS1_RSS.bak (Type: Database)
+2025-12-31 14:47:51,364 - INFO - \u2713 Valid backup: INDUS1_RSS.trn (Type: Transaction Log)
+2025-12-31 14:47:51,364 - INFO - Found 1 full backup(s) and 1 log backup(s)
+2025-12-31 14:47:51,364 - INFO - Selected backup chain: 2 file(s)
+2025-12-31 14:47:51,364 - INFO - Status: Found 2 backup(s) in folder
+2025-12-31 14:47:51,364 - INFO - Connecting to SQL Server: DESKTOP-4VRJ480
+2025-12-31 14:47:51,364 - INFO - Connection established successfully
+2025-12-31 14:47:51,364 - INFO - ------------------------------------------------------------
+2025-12-31 14:47:51,364 - INFO - Processing backup 1/2
+2025-12-31 14:47:51,364 - INFO - Type: Database
+2025-12-31 14:47:51,364 - INFO - File: INDUS1_RSS.bak
+2025-12-31 14:47:51,364 - INFO - Status: Restoring Database (1/2)
+2025-12-31 14:47:51,364 - INFO - Building RESTORE DATABASE command...
+2025-12-31 14:47:51,396 - INFO - Backup contains 2 file(s)
+2025-12-31 14:47:51,396 - INFO - Using custom restore path: E:\SQLData
+2025-12-31 14:47:51,396 - INFO - Using REPLACE option to overwrite existing database
+2025-12-31 14:47:51,396 - INFO - Using NORECOVERY (more backups to apply)
+2025-12-31 14:47:51,396 - INFO - Executing restore command...
+2025-12-31 14:47:51,396 - INFO - Status: Executing restore command...
+2025-12-31 14:47:51,396 - INFO - Progress monitor started
+2025-12-31 14:54:47,670 - INFO - Progress: 100.0% complete
+2025-12-31 14:54:47,670 - INFO - Restore progress: 100.0%
+2025-12-31 14:55:02,593 - INFO - \u2713 Database restore completed in 431.20 seconds
+2025-12-31 14:55:02,593 - INFO - Status: Database restore completed
+2025-12-31 14:55:02,593 - INFO - ------------------------------------------------------------
+2025-12-31 14:55:02,593 - INFO - Processing backup 2/2
+2025-12-31 14:55:02,593 - INFO - Type: Transaction Log
+2025-12-31 14:55:02,593 - INFO - File: INDUS1_RSS.trn
+2025-12-31 14:55:02,593 - INFO - Status: Restoring Transaction Log (2/2)
+2025-12-31 14:55:02,593 - INFO - Building RESTORE LOG command...
+2025-12-31 14:55:02,593 - INFO - Using RECOVERY (final restore)
+2025-12-31 14:55:02,593 - INFO - Executing restore command...
+2025-12-31 14:55:02,593 - INFO - Status: Executing restore command...
+2025-12-31 14:56:14,009 - INFO - \u2713 Transaction Log restore completed in 71.42 seconds
+2025-12-31 14:56:14,009 - INFO - Status: Transaction Log restore completed
+2025-12-31 14:56:14,009 - INFO - ------------------------------------------------------------
+2025-12-31 14:56:14,010 - INFO - Checking final database state...
+2025-12-31 14:56:14,022 - INFO - \u2713 Database state: ONLINE
+2025-12-31 14:56:14,022 - INFO - Status: COMPLETED
+2025-12-31 14:56:14,022 - INFO - ================================================================================
+2025-12-31 14:56:14,022 - INFO - \u2713 RESTORE COMPLETED SUCCESSFULLY
+2025-12-31 14:56:14,022 - INFO - ================================================================================
+2025-12-31 14:56:14,022 - INFO - \u2705 Restore completed successfully.
+2025-12-31 14:56:14,022 - INFO - ================================================================================
+2025-12-31 14:56:14,023 - INFO - PREPARING DATABASE
+2025-12-31 14:56:14,023 - INFO - ================================================================================
+2025-12-31 14:56:14,024 - INFO - Setting recovery model to SIMPLE...
+2025-12-31 14:56:14,030 - INFO - \u2713 Recovery model set to SIMPLE
+2025-12-31 14:56:14,030 - INFO - Dropping existing clustered indexes...
+2025-12-31 15:00:18,755 - INFO - \u2713 Database preparation completed
+2025-12-31 15:00:18,755 - INFO - ================================================================================
+2025-12-31 15:00:18,755 - INFO - CREATING PARTITIONS
+2025-12-31 15:00:18,755 - INFO - ================================================================================
+2025-12-31 15:00:18,755 - INFO - Partition years: [2022, 2023, 2024, 2025, 2026]
+2025-12-31 15:00:18,755 - INFO - Checking for existing partition scheme...
+2025-12-31 15:00:19,505 - INFO - \u2713 Partition function and scheme created successfully
+2025-12-31 15:00:19,505 - INFO - ================================================================================
+2025-12-31 15:00:19,505 - INFO - CREATING INDEXES
+2025-12-31 15:00:19,505 - INFO - ================================================================================
+2025-12-31 15:00:19,505 - INFO - Connecting to database...
+2025-12-31 15:00:19,505 - INFO - Building index creation script...
+2025-12-31 15:00:19,505 - INFO - Executing index creation...
+2025-12-31 15:30:56,499 - INFO - \u2713 Indexes created successfully
+2025-12-31 15:30:56,502 - INFO - ================================================================================
+2025-12-31 15:30:56,502 - INFO - CREATING TEMPORARY TABLES
+2025-12-31 15:30:56,502 - INFO - ================================================================================
+2025-12-31 15:30:56,502 - INFO - Connecting to database...
+2025-12-31 15:30:56,502 - INFO - Creating temp tables with partition scheme...
+2025-12-31 15:30:57,459 - INFO - \u2713 Temp tables created successfully
+2025-12-31 15:30:57,459 - INFO - ================================================================================
+2025-12-31 15:30:57,459 - INFO - CREATING MASTER BACKUP
+2025-12-31 15:30:57,459 - INFO - ================================================================================
+2025-12-31 15:30:57,459 - INFO - Target backup folder: E:\BACKUP
+2025-12-31 15:30:57,491 - INFO - \u2713 Backup folder ready
+2025-12-31 15:30:57,491 - INFO - Backup file: E:\BACKUP\INDUS1_RSS_Partitioned_MASTER_20251231_153057.bak
+2025-12-31 15:30:57,491 - INFO - Starting backup (this may take a while)...
+2025-12-31 15:34:47,612 - INFO - \u2713 Backup created successfully (2.42 GB)
+2025-12-31 15:34:47,612 - INFO - ================================================================================
+2025-12-31 15:34:47,612 - INFO - PURGING YEARS
+2025-12-31 15:34:47,612 - INFO - ================================================================================
+2025-12-31 15:34:47,612 - INFO - Years to purge: [2026, 2022, 2023]
+2025-12-31 15:34:47,625 - INFO - Years to keep: [2024, 2025]
+2025-12-31 15:34:47,625 - INFO - ------------------------------------------------------------
+2025-12-31 15:34:47,625 - INFO - Purging year: 2026
+2025-12-31 15:34:47,839 - INFO - \u2713 Year 2026 purged successfully
+2025-12-31 15:34:47,839 - INFO - ------------------------------------------------------------
+2025-12-31 15:34:47,839 - INFO - Purging year: 2022
+2025-12-31 15:34:47,909 - INFO - \u2713 Year 2022 purged successfully
+2025-12-31 15:34:47,909 - INFO - ------------------------------------------------------------
+2025-12-31 15:34:47,909 - INFO - Purging year: 2023
+2025-12-31 15:34:48,843 - INFO - \u2713 Year 2023 purged successfully
+2025-12-31 15:34:48,843 - INFO - \u2713 All years purged successfully
+2025-12-31 15:34:48,843 - INFO - ================================================================================
+2025-12-31 15:34:48,843 - INFO - FINAL CLEANUP AND YEARLY BACKUP
+2025-12-31 15:34:48,843 - INFO - ================================================================================
+2025-12-31 15:34:48,843 - INFO - Shrinking database...
+2025-12-31 15:51:57,810 - INFO - \u2713 Database shrunk successfully
+2025-12-31 15:51:57,810 - INFO - Rebuilding indexes...
+2025-12-31 16:14:26,514 - INFO - Index rebuild finished.
+2025-12-31 16:14:26,521 - INFO - Changing recovery mode from SIMPLE to FULL
+2025-12-31 16:14:27,042 - INFO - Recovery mode changed to : FULL
+2025-12-31 16:14:27,042 - INFO - Creating final yearly backup...
+2025-12-31 16:14:27,058 - INFO - Backup file: E:\BACKUP\INDUS1_RSS_[2024, 2025]_Yearly_20251231_161427.bak
+2025-12-31 16:17:56,762 - INFO - \u2713 Yearly backup created successfully (2.40 GB)
+2025-12-31 16:17:56,762 - INFO - ================================================================================
+2025-12-31 16:17:56,762 - INFO - \u2713 ALL PROCESSES COMPLETED SUCCESSFULLY!
+2025-12-31 16:17:56,762 - INFO - ================================================================================
+2025-12-31 16:17:56,762 - INFO - ================================================================================
+2025-12-31 16:17:56,762 - INFO - \u2713 SCRIPT COMPLETED SUCCESSFULLY
+2025-12-31 16:17:56,762 - INFO - Total execution time: 90.27 minutes
+2025-12-31 16:17:56,762 - INFO - ================================================================================
+2025-12-31 16:17:56,762 - INFO - Script execution time: 90.27 minutes
+2025-12-31 16:17:56,762 - INFO - Script finished.
+2025-12-31 18:03:17,233 - INFO - ================================================================================
+2025-12-31 18:03:17,233 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM SCRATCH
+2025-12-31 18:03:17,233 - INFO - Timestamp: 2025-12-31 18:03:17
+2025-12-31 18:03:17,233 - INFO - ================================================================================
+2025-12-31 18:03:17,233 - INFO - Configuration:
+2025-12-31 18:03:17,233 - INFO -   Server: DESKTOP-4VRJ480
+2025-12-31 18:03:17,233 - INFO -   Database: INDUS1_RSS
+2025-12-31 18:03:17,233 - INFO -   Source folder: D:\BACKUP\INDUS1_RSS
+2025-12-31 18:03:17,233 - INFO -   Target folder: E:\BACKUP
+2025-12-31 18:03:17,233 - INFO -   Restore path: E:\SQLData
+2025-12-31 18:03:17,233 - INFO -   Yearly Backup Year: [2024, 2025]
+2025-12-31 18:03:17,233 - INFO - ================================================================================
+2025-12-31 18:03:43,785 - INFO - Checking if database exists...
+2025-12-31 18:03:48,398 - INFO - Database 'INDUS1_RSS' does not exist
+2025-12-31 18:03:48,398 - INFO - Database 'INDUS1_RSS' does not exist - will create new
+2025-12-31 18:03:48,398 - INFO - Starting restore of 'INDUS1_RSS'
+2025-12-31 18:03:48,398 - INFO - Source folder: D:\BACKUP\INDUS1_RSS
+2025-12-31 18:03:48,398 - INFO - Restore path: E:\SQLData
+2025-12-31 18:03:48,398 - INFO - ================================================================================
+2025-12-31 18:03:48,398 - INFO - Starting database restore operation
+2025-12-31 18:03:48,398 - INFO - ================================================================================
+2025-12-31 18:03:48,398 - INFO - Scanning backup folder: D:\BACKUP\INDUS1_RSS
+2025-12-31 18:03:48,414 - INFO - Found 2 backup file(s) in folder
+2025-12-31 18:03:48,558 - INFO - \u2713 Valid backup: INDUS1_RSS.bak (Type: Database)
+2025-12-31 18:03:48,716 - INFO - \u2713 Valid backup: INDUS1_RSS.trn (Type: Transaction Log)
+2025-12-31 18:03:48,716 - INFO - Found 1 full backup(s) and 1 log backup(s)
+2025-12-31 18:03:48,716 - INFO - Selected backup chain: 2 file(s)
+2025-12-31 18:03:48,716 - INFO - Status: Found 2 backup(s) in folder
+2025-12-31 18:03:48,716 - INFO - Connecting to SQL Server: DESKTOP-4VRJ480
+2025-12-31 18:03:48,716 - INFO - Connection established successfully
+2025-12-31 18:03:48,716 - INFO - ------------------------------------------------------------
+2025-12-31 18:03:48,716 - INFO - Processing backup 1/2
+2025-12-31 18:03:48,716 - INFO - Type: Database
+2025-12-31 18:03:48,716 - INFO - File: INDUS1_RSS.bak
+2025-12-31 18:03:48,716 - INFO - Status: Restoring Database (1/2)
+2025-12-31 18:03:48,716 - INFO - Building RESTORE DATABASE command...
+2025-12-31 18:03:48,748 - INFO - Backup contains 2 file(s)
+2025-12-31 18:03:48,748 - INFO - Using custom restore path: E:\SQLData
+2025-12-31 18:03:48,748 - INFO - Using REPLACE option to overwrite existing database
+2025-12-31 18:03:48,748 - INFO - Using NORECOVERY (more backups to apply)
+2025-12-31 18:03:48,748 - INFO - Executing restore command...
+2025-12-31 18:03:48,748 - INFO - Status: Executing restore command...
+2025-12-31 18:03:48,748 - INFO - Progress monitor started
+2025-12-31 18:10:47,035 - INFO - Progress: 100.0% complete
+2025-12-31 18:10:47,035 - INFO - Restore progress: 100.0%
+2025-12-31 18:11:02,040 - INFO - \u2713 Database restore completed in 433.29 seconds
+2025-12-31 18:11:02,040 - INFO - Status: Database restore completed
+2025-12-31 18:11:02,040 - INFO - ------------------------------------------------------------
+2025-12-31 18:11:02,040 - INFO - Processing backup 2/2
+2025-12-31 18:11:02,040 - INFO - Type: Transaction Log
+2025-12-31 18:11:02,040 - INFO - File: INDUS1_RSS.trn
+2025-12-31 18:11:02,040 - INFO - Status: Restoring Transaction Log (2/2)
+2025-12-31 18:11:02,040 - INFO - Building RESTORE LOG command...
+2025-12-31 18:11:02,040 - INFO - Using RECOVERY (final restore)
+2025-12-31 18:11:02,040 - INFO - Executing restore command...
+2025-12-31 18:11:02,040 - INFO - Status: Executing restore command...
+2025-12-31 18:12:11,565 - INFO - \u2713 Transaction Log restore completed in 69.53 seconds
+2025-12-31 18:12:11,565 - INFO - Status: Transaction Log restore completed
+2025-12-31 18:12:11,565 - INFO - ------------------------------------------------------------
+2025-12-31 18:12:11,565 - INFO - Checking final database state...
+2025-12-31 18:12:11,577 - INFO - \u2713 Database state: ONLINE
+2025-12-31 18:12:11,577 - INFO - Status: COMPLETED
+2025-12-31 18:12:11,577 - INFO - ================================================================================
+2025-12-31 18:12:11,577 - INFO - \u2713 RESTORE COMPLETED SUCCESSFULLY
+2025-12-31 18:12:11,577 - INFO - ================================================================================
+2025-12-31 18:12:11,577 - INFO - \u2705 Restore completed successfully.
+2025-12-31 18:12:11,577 - INFO - ================================================================================
+2025-12-31 18:12:11,577 - INFO - PREPARING DATABASE
+2025-12-31 18:12:11,577 - INFO - ================================================================================
+2025-12-31 18:12:11,577 - INFO - Connecting to database...
+2025-12-31 18:12:11,577 - INFO - Setting recovery model for [INDUS1_RSS] to SIMPLE...
+2025-12-31 18:12:11,581 - INFO - \u2713 Recovery model set to SIMPLE
+2025-12-31 18:12:11,581 - INFO - Identifying target clustered indexes...
+2025-12-31 18:12:11,630 - ERROR - SQL Server error during database preparation: No results.  Previous SQL was not a query.
+2025-12-31 18:12:11,645 - ERROR - ================================================================================
+2025-12-31 18:12:11,645 - ERROR - \u274c SCRIPT ABORTED DUE TO ERROR
+2025-12-31 18:12:11,645 - ERROR - Error: No results.  Previous SQL was not a query.
+2025-12-31 18:12:11,645 - ERROR - ================================================================================
+2025-12-31 18:12:11,645 - INFO - Script execution time: 8.91 minutes
+2025-12-31 18:12:11,645 - INFO - Script finished.
+2026-01-01 10:03:39,175 - INFO - ================================================================================
+2026-01-01 10:03:39,175 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM SCRATCH
+2026-01-01 10:03:39,175 - INFO - Timestamp: 2026-01-01 10:03:39
+2026-01-01 10:03:39,175 - INFO - ================================================================================
+2026-01-01 10:03:39,175 - INFO - Configuration:
+2026-01-01 10:03:39,175 - INFO -   Server: DESKTOP-4VRJ480
+2026-01-01 10:03:39,175 - INFO -   Database: INDUS1_RSS
+2026-01-01 10:03:39,175 - INFO -   Source folder: D:\BACKUP\INDUS1_RSS
+2026-01-01 10:03:39,175 - INFO -   Target folder: E:\BACKUP
+2026-01-01 10:03:39,175 - INFO -   Restore path: E:\SQLData
+2026-01-01 10:03:39,175 - INFO -   Yearly Backup Year: [2024, 2025]
+2026-01-01 10:03:39,175 - INFO - ================================================================================
+2026-01-01 10:03:51,353 - INFO - Script execution time: 0.20 minutes
+2026-01-01 10:03:51,353 - INFO - Script finished.
+2026-01-01 10:04:08,668 - INFO - ================================================================================
+2026-01-01 10:04:08,668 - INFO - DATABASE AUTOMATION SCRIPT STARTED - FROM SCRATCH
+2026-01-01 10:04:08,668 - INFO - Timestamp: 2026-01-01 10:04:08
+2026-01-01 10:04:08,668 - INFO - ================================================================================
+2026-01-01 10:04:08,668 - INFO - Configuration:
+2026-01-01 10:04:08,668 - INFO -   Server: DESKTOP-4VRJ480
+2026-01-01 10:04:08,668 - INFO -   Database: INDUS1_RSS
+2026-01-01 10:04:08,668 - INFO -   Source folder: D:\BACKUP\INDUS1_RSS
+2026-01-01 10:04:08,668 - INFO -   Target folder: E:\BACKUP
+2026-01-01 10:04:08,668 - INFO -   Restore path: E:\SQLData
+2026-01-01 10:04:08,668 - INFO -   Yearly Backup Year: [2025]
+2026-01-01 10:04:08,668 - INFO - ================================================================================
+2026-01-01 10:04:16,003 - INFO - Checking if database exists...
+2026-01-01 10:04:20,559 - INFO - Database 'INDUS1_RSS' does not exist
+2026-01-01 10:04:20,559 - INFO - Database 'INDUS1_RSS' does not exist - will create new
+2026-01-01 10:04:20,559 - INFO - Starting restore of 'INDUS1_RSS'
+2026-01-01 10:04:20,559 - INFO - Source folder: D:\BACKUP\INDUS1_RSS
+2026-01-01 10:04:20,559 - INFO - Restore path: E:\SQLData
+2026-01-01 10:04:20,559 - INFO - ================================================================================
+2026-01-01 10:04:20,559 - INFO - Starting database restore operation
+2026-01-01 10:04:20,559 - INFO - ================================================================================
+2026-01-01 10:04:20,559 - INFO - Scanning backup folder: D:\BACKUP\INDUS1_RSS
+2026-01-01 10:04:20,559 - INFO - Found 2 backup file(s) in folder
+2026-01-01 10:04:20,701 - INFO - \u2713 Valid backup: INDUS1_RSS.bak (Type: Database)
+2026-01-01 10:04:20,845 - INFO - \u2713 Valid backup: INDUS1_RSS.trn (Type: Transaction Log)
+2026-01-01 10:04:20,845 - INFO - Found 1 full backup(s) and 1 log backup(s)
+2026-01-01 10:04:20,845 - INFO - Selected backup chain: 2 file(s)
+2026-01-01 10:04:20,845 - INFO - Status: Found 2 backup(s) in folder
+2026-01-01 10:04:20,845 - INFO - Connecting to SQL Server: DESKTOP-4VRJ480
+2026-01-01 10:04:20,845 - INFO - Connection established successfully
+2026-01-01 10:04:20,845 - INFO - ------------------------------------------------------------
+2026-01-01 10:04:20,845 - INFO - Processing backup 1/2
+2026-01-01 10:04:20,845 - INFO - Type: Database
+2026-01-01 10:04:20,845 - INFO - File: INDUS1_RSS.bak
+2026-01-01 10:04:20,845 - INFO - Status: Restoring Database (1/2)
+2026-01-01 10:04:20,845 - INFO - Building RESTORE DATABASE command...
+2026-01-01 10:04:20,876 - INFO - Backup contains 2 file(s)
+2026-01-01 10:04:20,876 - INFO - Using custom restore path: E:\SQLData
+2026-01-01 10:04:20,876 - INFO - Using REPLACE option to overwrite existing database
+2026-01-01 10:04:20,892 - INFO - Using NORECOVERY (more backups to apply)
+2026-01-01 10:04:20,892 - INFO - Executing restore command...
+2026-01-01 10:04:20,892 - INFO - Status: Executing restore command...
+2026-01-01 10:04:20,892 - INFO - Progress monitor started
+2026-01-01 10:11:29,517 - INFO - Progress: 100.0% complete
+2026-01-01 10:11:29,517 - INFO - Restore progress: 100.0%
+2026-01-01 10:11:44,072 - INFO - \u2713 Database restore completed in 443.18 seconds
+2026-01-01 10:11:44,072 - INFO - Status: Database restore completed
+2026-01-01 10:11:44,072 - INFO - ------------------------------------------------------------
+2026-01-01 10:11:44,072 - INFO - Processing backup 2/2
+2026-01-01 10:11:44,073 - INFO - Type: Transaction Log
+2026-01-01 10:11:44,073 - INFO - File: INDUS1_RSS.trn
+2026-01-01 10:11:44,073 - INFO - Status: Restoring Transaction Log (2/2)
+2026-01-01 10:11:44,073 - INFO - Building RESTORE LOG command...
+2026-01-01 10:11:44,073 - INFO - Using RECOVERY (final restore)
+2026-01-01 10:11:44,073 - INFO - Executing restore command...
+2026-01-01 10:11:44,073 - INFO - Status: Executing restore command...
+2026-01-01 10:12:56,611 - INFO - \u2713 Transaction Log restore completed in 72.54 seconds
+2026-01-01 10:12:56,611 - INFO - Status: Transaction Log restore completed
+2026-01-01 10:12:56,612 - INFO - ------------------------------------------------------------
+2026-01-01 10:12:56,612 - INFO - Checking final database state...
+2026-01-01 10:12:56,652 - INFO - \u2713 Database state: ONLINE
+2026-01-01 10:12:56,653 - INFO - Status: COMPLETED
+2026-01-01 10:12:56,654 - INFO - ================================================================================
+2026-01-01 10:12:56,655 - INFO - \u2713 RESTORE COMPLETED SUCCESSFULLY
+2026-01-01 10:12:56,655 - INFO - ================================================================================
+2026-01-01 10:12:56,656 - INFO - \u2705 Restore completed successfully.
+2026-01-01 10:12:56,656 - INFO - ================================================================================
+2026-01-01 10:12:56,657 - INFO - PREPARING DATABASE
+2026-01-01 10:12:56,657 - INFO - ================================================================================
+2026-01-01 10:12:56,658 - INFO - Connecting to database...
+2026-01-01 10:12:56,658 - INFO - Setting recovery model for [INDUS1_RSS] to SIMPLE...
+2026-01-01 10:12:56,670 - INFO - \u2713 Recovery model set to SIMPLE
+2026-01-01 10:12:56,671 - INFO - Identifying target clustered indexes...
+2026-01-01 10:12:56,793 - INFO - Found 4 clustered index(es) to drop.
+2026-01-01 10:12:56,793 - INFO - Dropping index on table [i1_rss_analog]...
+2026-01-01 10:13:41,355 - INFO - \u2713 Successfully dropped index from i1_rss_analog
+2026-01-01 10:13:41,356 - INFO - Dropping index on table [i1_rss_status]...
+2026-01-01 10:14:08,478 - INFO - \u2713 Successfully dropped index from i1_rss_status
+2026-01-01 10:14:08,483 - INFO - Dropping index on table [main_i1_rss_analog]...
+2026-01-01 10:15:56,905 - INFO - \u2713 Successfully dropped index from main_i1_rss_analog
+2026-01-01 10:15:56,922 - INFO - Dropping index on table [main_i1_rss_status]...
+2026-01-01 10:16:44,429 - INFO - \u2713 Successfully dropped index from main_i1_rss_status
+2026-01-01 10:16:44,429 - INFO - \u2713 Database preparation completed
+2026-01-01 10:16:44,429 - INFO - ================================================================================
+2026-01-01 10:16:44,429 - INFO - CREATING PARTITIONS
+2026-01-01 10:16:44,429 - INFO - ================================================================================
+2026-01-01 10:16:44,429 - INFO - Partition years: [2022, 2023, 2024, 2025, 2026]
+2026-01-01 10:16:44,429 - INFO - Checking for existing partition scheme...
+2026-01-01 10:16:44,906 - INFO - \u2713 Partition function and scheme created successfully
+2026-01-01 10:16:44,906 - INFO - ================================================================================
+2026-01-01 10:16:44,906 - INFO - CREATING INDEXES
+2026-01-01 10:16:44,906 - INFO - ================================================================================
+2026-01-01 10:16:44,906 - INFO - Connecting to database...
+2026-01-01 10:16:44,906 - INFO - Building index creation script...
+2026-01-01 10:16:44,906 - INFO - Executing index creation...
+2026-01-01 10:46:36,034 - INFO - \u2713 Indexes created successfully
+2026-01-01 10:46:36,034 - INFO - ================================================================================
+2026-01-01 10:46:36,034 - INFO - CREATING TEMPORARY TABLES
+2026-01-01 10:46:36,034 - INFO - ================================================================================
+2026-01-01 10:46:36,034 - INFO - Connecting to database...
+2026-01-01 10:46:36,050 - INFO - Creating temp tables with partition scheme...
+2026-01-01 10:46:37,364 - INFO - \u2713 Temp tables created successfully
+2026-01-01 10:46:37,364 - INFO - ================================================================================
+2026-01-01 10:46:37,364 - INFO - PURGING YEARS
+2026-01-01 10:46:37,364 - INFO - ================================================================================
+2026-01-01 10:46:37,364 - INFO - Years to purge: [2024, 2026, 2022, 2023]
+2026-01-01 10:46:37,364 - INFO - Years to keep: [2025]
+2026-01-01 10:46:37,364 - INFO - ------------------------------------------------------------
+2026-01-01 10:46:37,364 - INFO - Purging year: 2024
+2026-01-01 10:48:12,112 - INFO - \u2713 Year 2024 purged successfully
+2026-01-01 10:48:12,112 - INFO - ------------------------------------------------------------
+2026-01-01 10:48:12,112 - INFO - Purging year: 2026
+2026-01-01 10:48:34,446 - INFO - \u2713 Year 2026 purged successfully
+2026-01-01 10:48:34,446 - INFO - ------------------------------------------------------------
+2026-01-01 10:48:34,447 - INFO - Purging year: 2022
+2026-01-01 10:48:34,520 - INFO - \u2713 Year 2022 purged successfully
+2026-01-01 10:48:34,521 - INFO - ------------------------------------------------------------
+2026-01-01 10:48:34,523 - INFO - Purging year: 2023
+2026-01-01 10:48:35,045 - INFO - \u2713 Year 2023 purged successfully
+2026-01-01 10:48:35,045 - INFO - \u2713 All years purged successfully
+2026-01-01 10:48:35,045 - INFO - ================================================================================
+2026-01-01 10:48:35,045 - INFO - FINAL CLEANUP AND YEARLY BACKUP
+2026-01-01 10:48:35,045 - INFO - ================================================================================
+2026-01-01 10:48:35,045 - INFO - Shrinking database...
+2026-01-01 10:56:22,418 - INFO - \u2713 Database shrunk successfully
+2026-01-01 10:56:22,418 - INFO - Rebuilding indexes...
+2026-01-01 11:07:20,441 - INFO - Index rebuild finished.
+2026-01-01 11:07:20,441 - INFO - Changing recovery mode from SIMPLE to FULL
+2026-01-01 11:07:21,298 - INFO - Recovery mode changed to : FULL
+2026-01-01 11:07:21,298 - INFO - Creating final yearly backup...
+2026-01-01 11:07:21,314 - INFO - Backup file: E:\BACKUP\INDUS1_RSS_[2025]_Yearly_20260101_110721.bak
+2026-01-01 11:08:52,127 - INFO - \u2713 Yearly backup created successfully (1.03 GB)
+2026-01-01 11:08:52,127 - INFO - ================================================================================
+2026-01-01 11:08:52,127 - INFO - \u2713 ALL PROCESSES COMPLETED SUCCESSFULLY!
+2026-01-01 11:08:52,127 - INFO - ================================================================================
+2026-01-01 11:08:52,127 - INFO - ================================================================================
+2026-01-01 11:08:52,140 - INFO - \u2713 SCRIPT COMPLETED SUCCESSFULLY
+2026-01-01 11:08:52,140 - INFO - Total execution time: 64.72 minutes
+2026-01-01 11:08:52,140 - INFO - ================================================================================
+2026-01-01 11:08:52,140 - INFO - Script execution time: 64.72 minutes
+2026-01-01 11:08:52,140 - INFO - Script finished.
